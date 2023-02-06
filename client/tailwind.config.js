@@ -33,7 +33,7 @@ module.exports = {
           dark: withOpacity("--color-dark"),
           light: withOpacity("--color-light"),
         },
-      },
+      }, //usage: text-custom-accent
       backgroundColor: {
         custom: {
           accent: withOpacity("--bg-accent"),
@@ -47,7 +47,7 @@ module.exports = {
           primary: withOpacity("--border-primary"),
           secondary: withOpacity("--border-secondary"),
         },
-      }, //usage: bg-custom-primary
+      }, //usage: border-custom-primary
     },
   },
   plugins: [],
