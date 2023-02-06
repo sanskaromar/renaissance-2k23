@@ -18,7 +18,7 @@
     "camelcase": "error", // This rule enforces camelcase naming convention.
     "no-unused-vars": "error", // This rule disallows unused variables.
     // "arrow-body-style": ["error", "always"], // This rule enforces consistent use of braces for all arrow functions.
-    "capitalized-comments": ["error", "always"], // This rule enforces capitalization of the first letter of a comment.
+    // "capitalized-comments": ["error", "always"], // This rule enforces capitalization of the first letter of a comment.
     "curly": ["error", "multi-or-nest", "consistent"], // This rule enforces consistent brace style for all control statements.
     "eqeqeq": ["error", "always"], // This rule requires the use of === and !==.
     "no-alert": "error", // This rule disallows the use of alert, confirm, and prompt.
