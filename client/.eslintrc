@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": ["import"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module" 
+  },
+  "rules": {
+    "no-console": "warn", // This rule disallows the use of console.
+    "no-eval": "error", // This rule disallows the use of eval().
+    "import/first": "error", // This rule reports any imports that come after non-import statements.
+    "import/no-duplicates": "error", // This rule reports if a resolved path is imported more than once.
+    "camelcase": "error", // This rule enforces camelcase naming convention.
+    "no-unused-vars": "error", // This rule disallows unused variables.
+    // "arrow-body-style": ["error", "always"], // This rule enforces consistent use of braces for all arrow functions.
+    "capitalized-comments": ["error", "always"], // This rule enforces capitalization of the first letter of a comment.
+    "curly": ["error", "multi-or-nest", "consistent"], // This rule enforces consistent brace style for all control statements.
+    "eqeqeq": ["error", "always"], // This rule requires the use of === and !==.
+    "no-alert": "error", // This rule disallows the use of alert, confirm, and prompt.
+    "default-param-last": "error", // This rule enforces default parameters to be last.
+    "default-case": "error", // This rule requires default cases in switch statements.
+    "default-case-last": "error", // This rule enforces default clauses in switch statements to be last.
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }], // This rule enforces the use of function declarations.
+    "logical-assignment-operators": "error", // This rule enforces the use of logical assignment operators.
+    "max-depth": ["error", 5], // This rule enforces a maximum depth that blocks can be nested.
+    // "multiline-comment-style": ["error", "starred-block"], // This rule enforces a particular style for multiline comments.
+    "no-else-return": ["error", { "allowElseIf": false }], // This rule disallows unnecessary blocks following if and else statements.
+    "no-empty": ["error", { "allowEmptyCatch": true }] // This rule disallows empty block statements.
+  }
+}
