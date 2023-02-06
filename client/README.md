@@ -1,9 +1,11 @@
 # Renaissance 2023
+
 ---
 
 Guidelines for contributing to the project:
+
 - Use the Tailwind CSS framework for styling components
-- Use the custom classes defined in the `tailwind.config.js` file 
+- Use the custom classes defined in the `tailwind.config.js` file
   - Can be used in classes as `bg-custom-dark` or `text-custom-accent` etc.
 - Keep formatting consistent with each other (Use prettier for formatting)
 - Follow the linting rules and **make sure to remove all warnings and errors before committing**
@@ -15,6 +17,7 @@ Guidelines for contributing to the project:
 - Do not install external packages if they are not absolutely necessary
 
 ---
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

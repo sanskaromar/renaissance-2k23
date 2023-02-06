@@ -8,9 +8,7 @@ function withOpacity(variableName) {
   };
 }
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       xs: "475px",
@@ -51,4 +49,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
