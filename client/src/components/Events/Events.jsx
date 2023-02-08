@@ -5,23 +5,26 @@ import eventsData from "./eventsDB";
 
 const Events = () => {
   const [currState, setCurrState] = useState(0);
-  // const [index1, setIndex1] = useState(1);
-  // const [index2, setIndex2] = useState(2);
-  // const [index3, setIndex3] = useState(3);
-  // const [index4, setIndex4] = useState(4);
+  const [index1, setIndex1] = useState(1);
+  const [index2, setIndex2] = useState(2);
+  const [index3, setIndex3] = useState(3);
+  const [index4, setIndex4] = useState(4);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (currState === 7) setCurrState(0);
       else setCurrState(currState + 1);
-      // setIndex1((currState + 1) % 8);
+      // setIndex2((currState + 1) % 8);
       // setIndex2((index1 + 1) % 8);
       // setIndex3((index2 + 1) % 8);
       // setIndex4((index3 + 1) % 8);
-      // setIndex2((((currState + 1) % 8) + 1) % 8);
-      // setIndex3((((((currState + 1) % 8) + 1) % 8) + 1) % 8);
-      // setIndex4((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8);
-    }, 5000);
+      setIndex1((((currState + 1) % 8) + 1) % 8);
+      setIndex2((((((currState + 1) % 8) + 1) % 8) + 1) % 8);
+      setIndex3((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8);
+      setIndex4(
+        (((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8
+      );
+    }, 10000);
     return () => clearTimeout(timer);
   });
   const goToNext = (currState) => {
@@ -62,15 +65,16 @@ const Events = () => {
               <div className="relative">
                 <img
                   className="mb-2"
-                  // onClick={() => goToNext(index1)}
                   src={eventsData[currState].urlOne}
                   alt=""
                 />
-                <div className="absolute inset-0 bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700">
+                <div
+                  onClick={() => goToNext(index1)}
+                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                >
                   <div className="flex h-full items-center justify-center">
                     <div className="text-white text-lg">
-                      {eventsData[(currState + 1) % 8].title}
-                      {/* {eventsData[index1].title} */}
+                      {eventsData[index1].title}
                     </div>
                   </div>
                 </div>
@@ -78,15 +82,16 @@ const Events = () => {
               <div className="relative">
                 <img
                   className="mb-2"
-                  // onClick={() => goToNext(index2)}
                   src={eventsData[currState].urlTwo}
                   alt=""
                 />
-                <div className="absolute inset-0 bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700">
+                <div
+                  onClick={() => goToNext(index2)}
+                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                >
                   <div className="flex h-full items-center justify-center">
                     <div className="text-white text-lg">
-                      {eventsData[(((currState + 1) % 8) + 1) % 8].title}
-                      {/* {eventsData[index2].title} */}
+                      {eventsData[index2].title}
                     </div>
                   </div>
                 </div>
@@ -94,18 +99,16 @@ const Events = () => {
               <div className="relative">
                 <img
                   className="mb-2"
-                  // onClick={() => goToNext(index3)}
                   src={eventsData[currState].urlThree}
                   alt=""
                 />
-                <div className="absolute inset-0 bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700">
+                <div
+                  onClick={() => goToNext(index3)}
+                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                >
                   <div className="flex h-full items-center justify-center">
                     <div className="text-white text-lg">
-                      {
-                        eventsData[(((((currState + 1) % 8) + 1) % 8) + 1) % 8]
-                          .title
-                      }
-                      {/* {eventsData[index3].title} */}
+                      {eventsData[index3].title}
                     </div>
                   </div>
                 </div>
@@ -113,20 +116,16 @@ const Events = () => {
               <div className="relative">
                 <img
                   className="mb-2"
-                  // onClick={() => goToNext(index4)}
                   src={eventsData[currState].urlFour}
                   alt=""
                 />
-                <div className="absolute inset-0 bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700">
+                <div
+                  onClick={() => goToNext(index4)}
+                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                >
                   <div className="flex h-full items-center justify-center">
                     <div className="text-white text-lg">
-                      {
-                        eventsData[
-                          (((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) %
-                            8
-                        ].title
-                      }
-                      {/* {eventsData[index4].title} */}
+                      {eventsData[index4].title}
                     </div>
                   </div>
                 </div>
