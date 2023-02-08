@@ -1,6 +1,5 @@
 #container-style {
   height: 100%;
-  position: relative;
 }
 
 #carousel-boult {
@@ -15,6 +14,11 @@
   background-color: rgb(205, 205, 205);
   margin-left: 7px;
   border-radius: 10px;
+}
+
+#carousel-boult span:hover {
+  background-color: rgb(120, 120, 120);
+  cursor: pointer;
 }
 
 #Gallery {
@@ -43,4 +47,13 @@
     -moz-column-width: 100%;
     column-width: 100%;
   }
+}
+
+#transparent-background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
 }
