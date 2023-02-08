@@ -130,7 +130,7 @@ const Events = () => {
                   </div>
                 </div>
               </div>
-              <div id="carousel-boult" className="Gallery mt-5 mr-1">
+              <div id="carousel-boult" className="Gallery mt-4 mr-1">
                 {eventsData.map((events, currState) => (
                   <span
                     key={currState}
