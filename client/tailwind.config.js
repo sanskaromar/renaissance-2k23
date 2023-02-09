@@ -30,6 +30,7 @@ module.exports = {
           secondary: withOpacity("--color-secondary"),
           dark: withOpacity("--color-dark"),
           light: withOpacity("--color-light"),
+          nav: "#CAD2C5",
         },
       }, //usage: text-custom-accent
       backgroundColor: {
@@ -37,6 +38,7 @@ module.exports = {
           accent: withOpacity("--bg-accent"),
           dark: withOpacity("--bg-dark"),
           light: withOpacity("--bg-light"),
+          secondary: withOpacity("--bg-secondary"),
         },
       }, //usage: bg-custom-dark
       borderColor: {
