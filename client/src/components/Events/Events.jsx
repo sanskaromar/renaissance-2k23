@@ -49,7 +49,7 @@ const Events = () => {
             OUR EVENTS
           </h1>
         </div>
-        <div className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-20">
+        <div className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-10">
           <div
             id="photo-detail"
             className="pt-10 lg:pl-10 pb-10 lg:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center lg:block"
@@ -64,7 +64,7 @@ const Events = () => {
             </div>
             <p
               id="photo-body"
-              className=" text-gray-300 sm:px-20 md:px-20 lg:px-0 lg:pr-10 sm:text-center lg:text-left"
+              className=" text-gray-300 sm:px-10 md:px-20 lg:px-0 lg:pr-10 sm:text-center lg:text-left"
             >
               {eventsData[currState].body}
             </p>
@@ -74,7 +74,7 @@ const Events = () => {
           </div>
           <div
             id="photo-gallery"
-            className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-20 lg:px-0 lg:w-1/2"
+            className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-10 lg:px-0 lg:w-1/2"
           >
             <div id="Gallery" className="w-full">
               <div id="carousel-boult" className="Gallery mb-4">
