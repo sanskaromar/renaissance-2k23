@@ -30,13 +30,13 @@
   column-width: 50%;
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   #Gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
   }
-}
+} */
 
 @media screen and (max-width: 480px) {
   #Gallery {
