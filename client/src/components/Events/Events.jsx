@@ -16,7 +16,7 @@ const Events = () => {
       if (currState === 7) setCurrState(0);
       else setCurrState(currState + 1);
       setColor((currState + 1) % 8);
-      // setIndex2((currState + 1) % 8);
+      // setIndex1((((currState + 1) % 8) + 1) % 8);
       // setIndex2((index1 + 1) % 8);
       // setIndex3((index2 + 1) % 8);
       // setIndex4((index3 + 1) % 8);
