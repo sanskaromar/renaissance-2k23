@@ -42,25 +42,40 @@ const Events = () => {
     <div className="bg-custom-dark" id="container-style">
       <div id="description" className="bg-custom-dark sm:pb-6">
         <div className="bg-custom-dark">
-          <h1 className="text-gray-300 text-center text-2xl pb-4 font-bold pt-12">
+          <h1
+            id="heading"
+            className="text-gray-300 text-center text-2xl pb-4 font-bold pt-12"
+          >
             OUR EVENTS
           </h1>
         </div>
         <div className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-20">
-          <div className="pt-10 lg:pl-10 pb-10 lg:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center lg:block">
+          <div
+            id="photo-detail"
+            className="pt-10 lg:pl-10 pb-10 lg:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center lg:block"
+          >
             <div className="lg:pr-10">
-              <h1 className="sm:text-4xl lg:text-5xl text-gray-400 font-bold mb-8">
+              <h1
+                id="photo-title"
+                className="sm:text-4xl lg:text-5xl text-gray-400 font-bold mb-8"
+              >
                 {eventsData[currState].title}
               </h1>
             </div>
-            <p className=" text-gray-300 sm:px-20 md:px-20 lg:px-0 lg:pr-10 sm:text-center lg:text-left">
+            <p
+              id="photo-body"
+              className=" text-gray-300 sm:px-20 md:px-20 lg:px-0 lg:pr-10 sm:text-center lg:text-left"
+            >
               {eventsData[currState].body}
             </p>
             <button className="bg-gray-300 mt-10 p-2 pl-3 w-40 text-left rounded-sm font-semibold flex justify-left items-center">
               READ MORE <ArrowRightAltIcon className="ml-1" />
             </button>
           </div>
-          <div className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-20 lg:px-0 lg:w-1/2">
+          <div
+            id="photo-gallery"
+            className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-20 lg:px-0 lg:w-1/2"
+          >
             <div id="Gallery" className="w-full">
               <div id="carousel-boult" className="Gallery mb-4">
                 {eventsData.map((events, currState) => (
