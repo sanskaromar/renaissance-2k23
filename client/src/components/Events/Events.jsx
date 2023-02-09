@@ -9,11 +9,13 @@ const Events = () => {
   const [index2, setIndex2] = useState(2);
   const [index3, setIndex3] = useState(3);
   const [index4, setIndex4] = useState(4);
+  const [color, setColor] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (currState === 7) setCurrState(0);
       else setCurrState(currState + 1);
+      setColor((currState + 1) % 8);
       // setIndex2((currState + 1) % 8);
       // setIndex2((index1 + 1) % 8);
       // setIndex3((index2 + 1) % 8);
@@ -24,18 +26,23 @@ const Events = () => {
       setIndex4(
         (((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8
       );
-    }, 10000);
+    }, 8000);
     return () => clearTimeout(timer);
   });
   const goToNext = (currState) => {
     setCurrState(currState);
+    setColor(currState);
+    setIndex1((currState + 1) % 8);
+    setIndex2((((currState + 1) % 8) + 1) % 8);
+    setIndex3((((((currState + 1) % 8) + 1) % 8) + 1) % 8);
+    setIndex4((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8);
   };
 
   return (
     <div className="bg-custom-dark" id="container-style">
       <div id="description">
         <div className="bg-custom-dark">
-          <h1 className="text-gray-300 text-center text-3xl pb-8 font-bold pt-16">
+          <h1 className="text-gray-300 text-center text-2xl pb-4 font-bold pt-12">
             OUR EVENTS
           </h1>
         </div>
@@ -53,11 +60,13 @@ const Events = () => {
           </div>
           <div className="pb-10 pt-10 pr-10 w-1/2">
             <div id="Gallery" className="w-full">
-              <div id="carousel-boult" className="Gallery mb-4 mr-2">
+              <div id="carousel-boult" className="Gallery mb-4">
                 {eventsData.map((events, currState) => (
                   <span
-                    className="text-white"
                     key={currState}
+                    className={
+                      currState === color ? "bg-gray-900" : "bg-gray-400"
+                    }
                     onClick={() => goToNext(currState)}
                   ></span>
                 ))}
@@ -70,10 +79,10 @@ const Events = () => {
                 />
                 <div
                   onClick={() => goToNext(index1)}
-                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                  className="absolute inset-0 hover:cursor-pointer bg-black bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
                 >
                   <div className="flex h-full items-center justify-center">
-                    <div className="text-white text-lg">
+                    <div className="text-gray-300 text-lg">
                       {eventsData[index1].title}
                     </div>
                   </div>
@@ -87,10 +96,10 @@ const Events = () => {
                 />
                 <div
                   onClick={() => goToNext(index2)}
-                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                  className="absolute inset-0 hover:cursor-pointer bg-black bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
                 >
                   <div className="flex h-full items-center justify-center">
-                    <div className="text-white text-lg">
+                    <div className="text-gray-300 text-lg">
                       {eventsData[index2].title}
                     </div>
                   </div>
@@ -104,10 +113,10 @@ const Events = () => {
                 />
                 <div
                   onClick={() => goToNext(index3)}
-                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                  className="absolute inset-0 hover:cursor-pointer bg-black bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
                 >
                   <div className="flex h-full items-center justify-center">
-                    <div className="text-white text-lg">
+                    <div className="text-gray-300 text-lg">
                       {eventsData[index3].title}
                     </div>
                   </div>
@@ -121,19 +130,22 @@ const Events = () => {
                 />
                 <div
                   onClick={() => goToNext(index4)}
-                  className="absolute inset-0 hover:cursor-pointer bg-gray-900 bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
+                  className="absolute inset-0 hover:cursor-pointer bg-black bg-opacity-75 hover:bg-gray-900 transition ease-in-out duration-700"
                 >
                   <div className="flex h-full items-center justify-center">
-                    <div className="text-white text-lg">
+                    <div className="text-gray-300 text-lg">
                       {eventsData[index4].title}
                     </div>
                   </div>
                 </div>
               </div>
-              <div id="carousel-boult" className="Gallery mt-4 mr-1">
+              <div id="carousel-boult" className="Gallery mt-4">
                 {eventsData.map((events, currState) => (
                   <span
                     key={currState}
+                    className={
+                      currState === color ? "bg-gray-900" : "bg-gray-400"
+                    }
                     onClick={() => goToNext(currState)}
                   ></span>
                 ))}
