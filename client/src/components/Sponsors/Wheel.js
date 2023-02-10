@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import SponsorsCard from "./SponsorsCard";
+import "./Sponsors.css";
 
 // import testImage from "./../../../public/ecellLogo.png";
 
@@ -28,7 +29,7 @@ export default class Wheel extends Component{
 
     let newCards = [];
 
-    let numCards = 8;
+    let numCards = 32;
     let constant = numCards/2;
 
     const testImage = "";
@@ -42,35 +43,41 @@ export default class Wheel extends Component{
     this.setState({ cards: newCards});
   }
 
-  handle_scroll = event =>{
+  // handle_scroll = event =>{
     // this.temp_theta += event.deltaY;
     // this.wheel.style.transform = `translate( -50%, -50%) rotate(${this.temp_theta * 0.05}deg)`;
     // this.setState({ theta : this.temp_theta});
 
-    clearTimeout( this.anim_id);
-    const scrollSpeed = (event.deltaY / 360) * 20;
-    this.temp_theta += scrollSpeed;
+  //   clearTimeout( this.anim_id);
+  //   const scrollSpeed = (event.deltaY / 360) * 20;
+  //   this.temp_theta += scrollSpeed;
 
-    this.wheel.style.transitionDuration = "0.0s";
-    this.wheel.style.transitionDelay = "0.0s";
-    this.wheel.style.transform = `translate( -50%, -50%) rotate( ${this.temp_theta}deg)`;
+  //   this.wheel.style.transitionDuration = "0.0s";
+  //   this.wheel.style.transitionDelay = "0.0s";
+  //   this.wheel.style.transform = `translate( -50%, -50%) rotate( ${this.temp_theta}deg)`;
 
-    for( let i = 0; i < this.wheel.children.length; i++){
-      this.wheel.children[ i].style.transitionDuration = "0.0s";
-      this.wheel.children[ i].style.transitionDelay = "0.0s";
-      this.wheel.children[ i].style.transform = `translate( -50%, -50%) rotate( ${-1 * this.temp_theta}deg)`;
-      }
+  //   for( let i = 0; i < this.wheel.children.length; i++){
+  //     this.wheel.children[ i].style.transitionDuration = "0.0s";
+  //     this.wheel.children[ i].style.transitionDelay = "0.0s";
+  //     this.wheel.children[ i].style.transform = `translate( -50%, -50%) rotate( ${-1 * this.temp_theta}deg)`;
+  //     }
 
-    this.anim_id = setTimeout( () => {
-      this.setState( {theta : this.temp_theta});
-    }, 150);
-  }
+  //   this.anim_id = setTimeout( () => {
+  //     this.setState( {theta : this.temp_theta});
+  //   }, 150);
+  // }
 
   render(){
     return(
       <>
-        <div onWheel={this.handle_scroll} ref={ref_id => this.wheel = ref_id} style={Styles.Wheel}>
+        
+        <div ref={ref_id => this.wheel = ref_id} style={Styles.Wheel} className="SponsorsWheel">
+          
           {this.state.cards}
+        </div>
+        <div style={Styles.heading}>
+          <h3 style={Styles.text.smallhead}>OUR SPONSORSHIPS</h3>
+          <h1 style={Styles.text.largehead}>OFFICIAL SPONSORS</h1>
         </div>
       </>
     )
@@ -80,12 +87,33 @@ export default class Wheel extends Component{
 const Styles = {
   Wheel : {
     position : 'absolute',
-    bottom : '900px',
+    top : '50%',
     left : '50%',
-    transform : 'translate( -50%, -50%)',
-    height : '1400px',
-    width : '1400px',
-    backgroundColor : "blue",
+    transform : 'translate( -50%, -100%)',
+    height : '3600px',
+    width : '3600px',
+    borderRadius : '50%',
+    backgroundColor : "#2F3E46",
     overflowLeft : 'hidden'
+  },
+  heading : {
+    position : 'absolute',
+    top : '50%',
+    paddingBottom : '15vh',
+    left : '50%',
+    transform : 'translate( -50%, -100%)',
+    textAlign : 'center'
+  },
+  text : {
+    smallhead : {
+      color : 'white',
+      fontSize : '2vw',
+      fontWeight : 'bold'
+    },
+    largehead : {
+      color : 'white',
+      fontSize : '5vw',
+      fontWeight : 'bold'
+    }
   }
 }

@@ -20,7 +20,7 @@ class SponsorsCard extends React.Component {
     let new_coords = this.get_coords( this.props.theta, this.props.radius);
 
     return (
-        <div style={{...Styles.card, left: `${this.props.center.x + new_coords.x}px`, top: `${this.props.center.y - new_coords.y}px`}}>
+        <div style={{...Styles.card, left: `${this.props.center.x + new_coords.x}px`, top: `${this.props.center.y - new_coords.y}px`}} className="SponsorsCard">
           <div style={Styles.cardInner}>
             {/* <img src={require(`${this.props.image}`)}/> */}
           </div>

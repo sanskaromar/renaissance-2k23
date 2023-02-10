@@ -5,8 +5,8 @@ import Wheel from "./Wheel.js";
 
 export default function Sponsors() {
   const styleSponsorsMargin = {
-    backgroundImage:
-      "radial-gradient(120% 70% at 50% -30px, #2F3E46 75%, transparent 75%)",
+    // backgroundImage:
+    //   "radial-gradient(120% 70% at 50% -30px, #2F3E46 75%, transparent 75%)",
     width: '100vw'
   };
   const style2 = {
