@@ -3,21 +3,19 @@ import Wheel from "./Wheel.js";
 
 
 
-export default function Sponsors() {
+export default function Sponsors(props) {
   const styleSponsorsMargin = {
-    // backgroundImage:
-    //   "radial-gradient(120% 70% at 50% -30px, #2F3E46 75%, transparent 75%)",
-    width: '100vw'
+    width: "100vw"
   };
   const style2 = {
-    position : "relative",
-    width: '100%',
+    position: "relative",
+    width: "100%",
     overflow: "hidden"
   }
   return (
     <div style={style2}>
       <div className="h-screen bg-[#84A98C]" style={styleSponsorsMargin}>
-        <Wheel/>
+        <Wheel Images={props.ImageList} />
       </div>
     </div>
   );

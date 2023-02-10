@@ -22,7 +22,7 @@ class SponsorsCard extends React.Component {
     return (
         <div style={{...Styles.card, left: `${this.props.center.x + new_coords.x}px`, top: `${this.props.center.y - new_coords.y}px`}} className="SponsorsCard">
           <div style={Styles.cardInner}>
-            {/* <img src={require(`${this.props.image}`)}/> */}
+            <img src={require(`${this.props.image}`)}/>
           </div>
         </div>
     );
