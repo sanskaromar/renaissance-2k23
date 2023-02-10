@@ -38,7 +38,6 @@ const Footer = () => {
                 <BsFillCheckCircleFill className="text-[42px] text-[#CAD2C5] mr-4 text-justify" />
                 <p className="text-[24px]  lg:text-[24px]">
                   Since real had half every him case in packages enquire we up
-                  ecstatic
                 </p>
               </div>
             </div>
