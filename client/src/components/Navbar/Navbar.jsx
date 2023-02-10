@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import logo from "./logo.png";
 
 const navItems = [
@@ -51,19 +52,19 @@ function Navbar() {
     // navbar component
     <nav className="w-full bg-custom-dark flex flex-row justify-between z-50 fixed">
       {/* logo  */}
-      <div className="logo px-4 py-4 flex justify-center items-center w-1/2 h-1/2 xs:px-8 xs-py-8 md:w-full md:h-full">
+      <div className="logo px-4 py-4 flex justify-center items-center w-1/2 h-1/2 xs:px-8 xs:py-8 ">
         <a href="#">
           <img className="cursor-pointer" src={logo} alt="Renaissance Logo" />
         </a>
       </div>
 
       {/* Navigation Menu  */}
-      <div className="container hidden md:flex justify-center px-12">
+      <div className="container hidden md:flex justify-end px-12">
         <ul className="text-custom-nav text-xs flex flex-row justify-center items-center">
           {navItems.map((item) => (
             <a
               href="#"
-              className="mx-4 px-2 relative before:content-[''] before:absolute before:bg-custom-accent before:h-[3px] before:w-0 before:left-0 before:bottom-[-8px] before:transition-[0.3s] before:duration-300 hover:before:w-full hover:text-custom-secondary"
+              className="mx-2 px-1 lg:mx-4 lg:px-2 relative before:content-[''] before:absolute before:bg-custom-accent before:h-[3px] before:w-0 before:left-0 before:bottom-[-8px] before:transition-[0.3s] before:duration-300 hover:before:w-full hover:text-custom-secondary"
             >
               <li className="font-light cursor-pointer" key={`link-${item}`}>
                 {item.toUpperCase()}
@@ -76,7 +77,7 @@ function Navbar() {
           ))}
           <a
             href="#"
-            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent"
+            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent md:hidden lg:flex"
           >
             <li className="cursor-pointer">CONFIRM YOUR SEAT</li>
           </a>
@@ -89,13 +90,22 @@ function Navbar() {
           {HamOpen}
         </div>
         {toggle && (
-          <div className="md:hidden fixed top-0 left-0 right-0 p-1 w-screen h-[85%] flex justify-end items-end flex-col bg-custom-dark opacity-90 shadow-lg">
+          <motion.div
+            className="md:hidden fixed top-0 left-0 right-0 p-1 w-screen flex justify-end items-end flex-col bg-custom-dark opacity-90 shadow-lg py-10"
+            animate={{ y: [-500, 0] }}
+            transition={{
+              type: "spring",
+              bounce: 0.25,
+              damping: 9,
+              mass: 0.5,
+            }}
+          >
             <div className="flex p-3" onClick={() => setToggle(false)}>
               {HamClose}
             </div>
 
             {/* logo */}
-            <div className="logo m-0 p-0 mb-5 w-full h-full  flex justify-center items-center">
+            <div className="logo m-0 p-1 mb-10 w-full flex justify-center items-center">
               <img
                 className="cursor-pointer w-1/2 "
                 src={logo}
@@ -104,22 +114,28 @@ function Navbar() {
             </div>
 
             {/* Nav-items  */}
-            <ul className="m-0 p-0 h-full w-full text-custom-nav text-xs flex flex-col justify-center items-center">
+            <ul className="m-0 p-0 h-full w-full text-custom-nav text-xs flex flex-col justify-start items-center">
               {navItems.map((item) => (
-                <li className="mx-10 my-4 cursor-pointer" key={`link-${item}`}>
-                  <a href="#" className="text-xl font-light text-custom-light">
+                <li className="mx-10 my-3 cursor-pointer" key={`link-${item}`}>
+                  <a
+                    href="#"
+                    className="text-sm xs:text-base font-light text-custom-light"
+                  >
                     {item.toUpperCase()}
                   </a>
                 </li>
               ))}
 
               <li className="mx-10 my-10 p-4 cursor-pointer bg-custom-secondary">
-                <a href="#" className="text-xl font-bold text-custom-accent">
+                <a
+                  href="#"
+                  className="xs:text-xl text-base font-bold text-custom-accent"
+                >
                   CONFIRM YOUR SEAT
                 </a>
               </li>
             </ul>
-          </div>
+          </motion.div>
         )}
         ;
       </div>
