@@ -90,52 +90,62 @@ function Navbar() {
           {HamOpen}
         </div>
         {toggle && (
-          <motion.div
-            className="md:hidden fixed top-0 left-0 right-0 p-1 w-screen flex justify-end items-end flex-col bg-custom-dark opacity-90 shadow-lg py-10"
-            animate={{ y: [-500, 0] }}
-            transition={{
-              type: "spring",
-              bounce: 0.25,
-              damping: 9,
-              mass: 0.5,
-            }}
-          >
-            <div className="flex p-3" onClick={() => setToggle(false)}>
-              {HamClose}
-            </div>
+          <div>
+            {/* extra transparent div */}
+            <div
+              className="md:hidden fixed top-0 left-0 right-0 w-screen h-screen flex bg-transparent z-40"
+              onClick={() => setToggle(false)}
+            ></div>
+            <motion.div
+              className="md:hidden fixed top-0 left-0 right-0 p-1 w-screen flex justify-end items-end flex-col bg-custom-dark opacity-90 shadow-lg py-10 z-50"
+              animate={{ y: [-500, 0] }}
+              transition={{
+                type: "spring",
+                bounce: 0.25,
+                damping: 9,
+                mass: 0.5,
+              }}
+            >
+              <div className="flex p-3" onClick={() => setToggle(false)}>
+                {HamClose}
+              </div>
 
-            {/* logo */}
-            <div className="logo m-0 p-1 mb-10 w-full flex justify-center items-center">
-              <img
-                className="cursor-pointer w-1/2 "
-                src={logo}
-                alt="Renaissance Logo"
-              />
-            </div>
+              {/* logo */}
+              <div className="logo m-0 p-1 mb-10 w-full flex justify-center items-center">
+                <img
+                  className="cursor-pointer w-1/2 "
+                  src={logo}
+                  alt="Renaissance Logo"
+                />
+              </div>
 
-            {/* Nav-items  */}
-            <ul className="m-0 p-0 h-full w-full text-custom-nav text-xs flex flex-col justify-start items-center">
-              {navItems.map((item) => (
-                <li className="mx-10 my-3 cursor-pointer" key={`link-${item}`}>
+              {/* Nav-items  */}
+              <ul className="m-0 p-0 h-full w-full text-custom-nav text-xs flex flex-col justify-start items-center">
+                {navItems.map((item) => (
+                  <li
+                    className="mx-10 my-3 cursor-pointer"
+                    key={`link-${item}`}
+                  >
+                    <a
+                      href="#"
+                      className="text-sm xs:text-base font-light text-custom-light"
+                    >
+                      {item.toUpperCase()}
+                    </a>
+                  </li>
+                ))}
+
+                <li className="mx-10 my-10 p-4 cursor-pointer bg-custom-secondary">
                   <a
                     href="#"
-                    className="text-sm xs:text-base font-light text-custom-light"
+                    className="xs:text-xl text-base font-bold text-custom-accent"
                   >
-                    {item.toUpperCase()}
+                    CONFIRM YOUR SEAT
                   </a>
                 </li>
-              ))}
-
-              <li className="mx-10 my-10 p-4 cursor-pointer bg-custom-secondary">
-                <a
-                  href="#"
-                  className="xs:text-xl text-base font-bold text-custom-accent"
-                >
-                  CONFIRM YOUR SEAT
-                </a>
-              </li>
-            </ul>
-          </motion.div>
+              </ul>
+            </motion.div>
+          </div>
         )}
         ;
       </div>
