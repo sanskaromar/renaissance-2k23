@@ -10,8 +10,9 @@ export default function Sponsors() {
     width: '100vw'
   };
   const style2 = {
-    width: '800px',
-    overflow: "scroll"
+    position : "relative",
+    width: '100%',
+    overflow: "hidden"
   }
   return (
     <div style={style2}>

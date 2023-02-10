@@ -8,7 +8,7 @@ export default class Wheel extends Component{
     super( props)
 
     this.state = {
-      radius : 800,
+      radius : 1800,
       cards : [],
       theta : 0.0
     }
@@ -22,6 +22,9 @@ export default class Wheel extends Component{
       x : parseFloat( this.wheel.style.width)/ 2.0,
       y : parseFloat( this.wheel.style.height)/ 2.0
     }
+
+    console.log( "x : ", center_of_wheel.x);
+    console.log( "y : ", center_of_wheel.y);
 
     let newCards = [];
 
@@ -65,9 +68,11 @@ export default class Wheel extends Component{
 
   render(){
     return(
-      <div onWheel={this.handle_scroll} ref={ref_id => this.wheel = ref_id} style={Styles.Wheel}>
-        {this.state.cards}
-      </div>
+      <>
+        <div onWheel={this.handle_scroll} ref={ref_id => this.wheel = ref_id} style={Styles.Wheel}>
+          {this.state.cards}
+        </div>
+      </>
     )
   }
 }
@@ -78,8 +83,9 @@ const Styles = {
     bottom : '900px',
     left : '50%',
     transform : 'translate( -50%, -50%)',
-    height : '300px',
-    width : '300px',
+    height : '1400px',
+    width : '1400px',
+    backgroundColor : "blue",
     overflowLeft : 'hidden'
   }
 }
