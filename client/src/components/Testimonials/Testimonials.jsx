@@ -50,7 +50,7 @@ const Testimonials = () => {
           <div className="slide my-4 ">
             <div
               id="height"
-              className="bg-white  rounded-3xl px-4 py-12 relative hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full  flex flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
+              className="bg-white  rounded-3xl px-4 py-12 relative hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full flex xl:flew-row lg:md: flex-col  sm:flex-row  justify-around hover:shadow-2xl hover:shadow-grey-100"
             >
               <div className="flex flex-col  xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
                 <div className="w-20 h-20 rounded-full mb-2">
@@ -65,7 +65,7 @@ const Testimonials = () => {
               </div>
               <div className="xl:w-1/2 lg:w-1/2 md:w-1/2">
                 <div className="xl:h-90 lg:h-80 md:h-75  ">
-                  <div className="mb-4 font-bold text-lg text-center ">
+                  <div className="mb-4 mt-4 font-bold text-lg text-center ">
                     Efficient Collaborating
                   </div>
                   <div className="">
@@ -86,7 +86,7 @@ const Testimonials = () => {
           <div className="slide my-4">
             <div
               id="height"
-              className="bg-white relative rounded-3xl  px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full flex flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
+              className="bg-white relative rounded-3xl  px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full flex xl:flew-row lg:md: flex-col  sm:flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
             >
               <div>
                 <div className="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
@@ -103,7 +103,7 @@ const Testimonials = () => {
               </div>
               <div className="xl:w-1/2 lg:w-1/2 md:w-1/2">
                 <div className="xl:h-90 lg:h-80 md:h-75  ">
-                  <div className="mb-4 font-bold text-lg text-center">
+                  <div className="mb-4 mt-4 font-bold text-lg text-center">
                     Intuitive Design
                   </div>
                   <div>
@@ -125,7 +125,7 @@ const Testimonials = () => {
           <div className="slide my-4">
             <div
               id="height"
-              className="bg-white relative rounded-3xl px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300 h-full w-full flex flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
+              className="bg-white relative rounded-3xl px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300 h-full w-full flex xl:flew-row lg:md: flex-col  sm:flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
             >
               <div className="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
                 <div className="w-20 h-20 rounded-full mb-2">
@@ -136,7 +136,7 @@ const Testimonials = () => {
               </div>
               <div className="xl:w-1/2 lg:w-1/2 md:w-1/2">
                 <div className="xl:h-90 lg:h-80 md:h-75 sm:h-75 xs:75  ">
-                  <div className="mb-4 font-bold text-lg text-center">
+                  <div className="mb-4 mt-4 font-bold text-lg text-center">
                     Mindblowing Service
                   </div>
                   <div>
@@ -158,7 +158,7 @@ const Testimonials = () => {
           <div className="slide my-4">
             <div
               id="height"
-              className="bg-white relative rounded-3xl  px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300 h-full w-full flex flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
+              className="bg-white relative rounded-3xl  px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300 h-full w-full flex xl:flew-row lg:md: flex-col  sm:flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
             >
               <div className="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
                 <div className="w-20 h-20 rounded-full mb-2">
@@ -174,7 +174,7 @@ const Testimonials = () => {
 
               <div className="xl:w-1/2 lg:w-1/2 md:w-1/2">
                 <div className="xl:h-90 lg:h-80 md:h-75 ">
-                  <div className="mb-4 font-bold text-lg text-center">
+                  <div className="mb-4 mt-4 font-bold text-lg text-center">
                     Great Effort
                   </div>
                   <div>
@@ -194,7 +194,7 @@ const Testimonials = () => {
           <div className="slide my-4">
             <div
               id="height"
-              className="bg-white relative rounded-3xl px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300w-full h-full flex flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
+              className="bg-white relative rounded-3xl px-4 py-12 hover:cursor-pointer hover:scale-95 ease-in-out duration-300w-full h-full flex xl:flew-row lg:md: flex-col  sm:flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
             >
               <div className="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
                 <div className="w-20 h-20 rounded-full mb-2">
@@ -209,7 +209,7 @@ const Testimonials = () => {
               </div>
               <div className="xl:w-1/2 lg:w-1/2 md:w-1/2">
                 <div className="xl:h-90 lg:h-80 md:h-75 ">
-                  <div className="mb-4 font-bold text-lg text-center">
+                  <div className="mb-4 mt-4 font-bold text-lg text-center">
                     Thrilling Experience
                   </div>
                   <div>
