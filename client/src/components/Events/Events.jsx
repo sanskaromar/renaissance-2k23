@@ -59,8 +59,8 @@ const Events = () => {
   };
 
   return (
-    <div className="bg-custom-dark" id="container-style">
-      <div id="description" className="bg-custom-dark sm:pb-6">
+    <div className="bg-custom-dark h-screen">
+      <div className="bg-custom-dark sm:pb-6">
         <div className="bg-custom-dark">
           <h1
             id="heading"
@@ -87,7 +87,7 @@ const Events = () => {
             </div>
             <p
               id="photo-body"
-              className=" text-gray-300 sm:px-10 md:px-20 lg:px-0 lg:pr-10 sm:text-center lg:text-left"
+              className="text-gray-300 sm:px-10 md:px-20 lg:px-0 lg:pr-10 sm:text-center lg:text-left"
             >
               {eventsData[currState].body}
             </p>
@@ -99,7 +99,6 @@ const Events = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
                 className="ml-1 w-7 h-6"
               >
                 <path
@@ -110,17 +109,19 @@ const Events = () => {
               </svg>
             </button>
           </div>
-          <div
-            id="photo-gallery"
-            className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-10 lg:px-0 lg:w-1/2"
-          >
+          <div className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-10 lg:px-0 lg:w-1/2">
             <div id="Gallery" className="w-full">
-              <div id="carousel-boult" className="Gallery mb-4">
+              <div
+                id="carousel-boult"
+                className="mb-4 flex items-center justify-center"
+              >
                 {eventsData.map((events, currState) => (
                   <span
                     key={currState}
                     className={
-                      currState === color ? "bg-gray-900" : "bg-gray-400"
+                      currState === color
+                        ? "bg-gray-900 hover:cursor-pointer"
+                        : "bg-gray-400 hover:cursor-pointer"
                     }
                     onClick={() => goToNext(currState)}
                   ></span>
@@ -194,12 +195,17 @@ const Events = () => {
                   </div>
                 </div>
               </div>
-              <div id="carousel-boult" className="Gallery mt-4">
+              <div
+                id="carousel-boult"
+                className="mt-4 flex items-center justify-center"
+              >
                 {eventsData.map((events, currState) => (
                   <span
                     key={currState}
                     className={
-                      currState === color ? "bg-gray-900" : "bg-gray-400"
+                      currState === color
+                        ? "bg-gray-900 hover:cursor-pointer"
+                        : "bg-gray-400 hover:cursor-pointer"
                     }
                     onClick={() => goToNext(currState)}
                   ></span>
