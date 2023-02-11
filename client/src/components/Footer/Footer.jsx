@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="Event w-3/4  ">
               <div className="bg-gradient-to-r from-white to-gray-900 mt-20 mb-8 p-0.5 shadow-2xl">
                 <div className="bg-[#181818] h-full flex flex-col lg:flex-row pt-10 pb-10">
-                  <div className="h-80 flex flex-col justify-center ml-20 lg:ml-40">
+                  <div className="h-80 flex flex-col justify-center  lg:ml-40">
                     <p className="text-white text-[15px] mt-4 mb-4">
                       EVENT <br></br>DETAILS
                     </p>
@@ -81,13 +81,13 @@ const Footer = () => {
                     <p className="text-white mt-4 mb-4">View Map Locations</p>
                   </div>
 
-                  <div className="h-80 text-white flex flex-col justify-center ml-20 lg:ml-40">
+                  <div className="h-80 text-white flex flex-col justify-center lg:ml-40">
                     <p>SOCIAL UPDATES</p>
                     <p className="mt-12">
                       You May Wonder : Why This Event Is So Popular
                     </p>
 
-                    <div className="icons flex h-40 items-center text-3xl">
+                    <div className="icons justify-around flex h-40 items-center text-3xl ml-20 mr-20">
                       <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-2xl">
                         <BsFacebook className=" text-[#2F3E46] rounded-full shadow-2xl" />
                       </div>
