@@ -19,7 +19,7 @@ const people = [
     name: "Chetanya Golecha",
     title: "Co-Founder, Water Float ",
     headline: " Intuitive Design",
-    text: " I would like to give my personal congrats to the entire team of NIT Allahabad for a wonderful event.The attendees were ecstatic than what I have ever seen.",
+    text: " I would like to give my personal congrats to entire team of NIT Allahabad for a wonderful event.The attendees were ecstatic than I have ever seen.",
   },
   {
     id: 3,
