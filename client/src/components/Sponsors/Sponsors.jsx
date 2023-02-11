@@ -5,7 +5,8 @@ import Wheel from "./Wheel.js";
 
 export default function Sponsors(props) {
   const styleSponsorsMargin = {
-    width: "100vw"
+    width: "100vw",
+    maxHeight: "120vw"
   };
   const style2 = {
     position: "relative",
