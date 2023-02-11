@@ -23,25 +23,27 @@ const Testimonials = () => {
   }, [index]);
 
   return (
-    <div className="relative align-middle overflow-x-hidden overflow-y-hidden w-full h-screen items-center bg-[#84A98C] xl:mx-40 lg:mx-40 md:mx-36 sm:mx-20 mb-10 py-10 px-10 my-2">
+    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-full items-center bg-[#84A98C] xl:mx-40 lg:mx-40 md:mx-36 sm:mx-20 mb-10 py-10 px-10 my-2">
       {/* prev arrow */}
-      <button className="prev" onClick={() => setIndex(index - 1)}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          color="white"
-          class="w-10 h-10"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      </button>
+      <div className="section-left">
+        <button className="prev" onClick={() => setIndex(index - 1)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            color="white"
+            class="w-10 h-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </button>
+      </div>
       {/* container of cards */}
       <div className="section-center touch-none w-full h-full  flex  overflow-y-hidden overflow-x-hidden ">
         {people.map((item, indexPeople) => {
@@ -60,7 +62,7 @@ const Testimonials = () => {
               <div className=" my-4 ">
                 <div
                   id="height"
-                  className="bg-white  rounded-3xl px-4 py-12 relative hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full flex xl:flew-row lg:md: flex-col  sm:flex-row  justify-around hover:shadow-2xl hover:shadow-grey-100"
+                  className="bg-white relative rounded-3xl px-4 py-12  hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-1520 h-592 flex xl:flew-row lg:md: flex-col  sm:flex-row  justify-around hover:shadow-2xl hover:shadow-grey-100"
                 >
                   <div className="flex flex-col  xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
                     <div className="w-20 h-20 rounded-full mb-2">
@@ -96,23 +98,25 @@ const Testimonials = () => {
       </div>
 
       {/* next arrow */}
-      <button className="next" onClick={() => setIndex(index + 1)}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          color="white"
-          className="w-10 h-10"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      </button>
+      <div className="section-right">
+        <button className="next" onClick={() => setIndex(index + 1)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            color="white"
+            className="w-10 h-10"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };
