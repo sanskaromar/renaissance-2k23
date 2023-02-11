@@ -62,7 +62,7 @@ const Testimonials = () => {
               <div className=" my-4 ">
                 <div
                   id="height"
-                  className="bg-white relative rounded-3xl px-4 py-12  hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-1520 h-592 flex xl:flew-row lg:md: flex-col  sm:flex-row  justify-around hover:shadow-2xl hover:shadow-grey-100"
+                  className=" bg-white relative rounded-3xl px-4 py-12  hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full flex xl:flew-row lg:md: flex-col sm:flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
                 >
                   <div className="flex flex-col  xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
                     <div className="w-20 h-20 rounded-full mb-2">
