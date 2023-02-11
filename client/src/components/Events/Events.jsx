@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./Events.css";
 import eventsData from "./eventsDB";
 
@@ -10,24 +10,45 @@ const Events = () => {
   const [index4, setIndex4] = useState(4);
   const [color, setColor] = useState(0);
 
+  const animateRef = useRef();
+
+  useEffect(() => {
+    const clock = setTimeout(() => {
+      const applyContainerProperties = () => {
+        animateRef.current.classList.add("effect-container");
+      };
+
+      animateRef.current.classList.remove("active");
+      setTimeout(() => {
+        animateRef.current.classList.add("active");
+      }, 500);
+
+      applyContainerProperties();
+
+      const cleanupRef = animateRef.current;
+
+      return () => {
+        cleanupRef.classList.remove("active");
+      };
+    }, 10000);
+    return () => clearTimeout(clock);
+  });
+
   useEffect(() => {
     const timer = setTimeout(() => {
       if (currState === 7) setCurrState(0);
       else setCurrState(currState + 1);
       setColor((currState + 1) % 8);
-      // setIndex1((((currState + 1) % 8) + 1) % 8);
-      // setIndex2((index1 + 1) % 8);
-      // setIndex3((index2 + 1) % 8);
-      // setIndex4((index3 + 1) % 8);
       setIndex1((((currState + 1) % 8) + 1) % 8);
       setIndex2((((((currState + 1) % 8) + 1) % 8) + 1) % 8);
       setIndex3((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8);
       setIndex4(
         (((((((((currState + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8) + 1) % 8
       );
-    }, 8000);
+    }, 11000);
     return () => clearTimeout(timer);
   });
+
   const goToNext = (currState) => {
     setCurrState(currState);
     setColor(currState);
@@ -48,7 +69,10 @@ const Events = () => {
             OUR EVENTS
           </h1>
         </div>
-        <div className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-10">
+        <div
+          className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-10"
+          ref={animateRef}
+        >
           <div
             id="photo-detail"
             className="pt-10 lg:pl-10 pb-10 lg:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center lg:block"
@@ -67,7 +91,6 @@ const Events = () => {
             >
               {eventsData[currState].body}
             </p>
-            {/* <ArrowRightAltIcon className="ml-1" /> */}
             <button className="bg-gray-300 mt-10 p-2 pl-3 w-40 text-left rounded-sm font-semibold flex justify-left items-center">
               READ MORE
               <svg
