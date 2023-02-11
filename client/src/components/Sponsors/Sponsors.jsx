@@ -1,7 +1,7 @@
 import React from "react";
 import Wheel from "./Wheel.js";
 
-
+import "./Sponsors.css";
 
 export default function Sponsors(props) {
   const styleSponsorsMargin = {
@@ -14,7 +14,7 @@ export default function Sponsors(props) {
     overflow: "hidden"
   }
   return (
-    <div style={style2}>
+    <div style={style2} className="prevent-select">
       <div className="h-screen bg-[#84A98C]" style={styleSponsorsMargin}>
         <Wheel Images={props.ImageList} />
       </div>
