@@ -1,8 +1,6 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import SponsorsCard from "./SponsorsCard";
 import "./Sponsors.css";
-
-// import testImage from "./../../../public/ecellLogo.png";
 
 export default class Wheel extends Component {
   constructor(props) {
@@ -15,23 +13,20 @@ export default class Wheel extends Component {
     };
 
     this.imageList = props.Images;
-    this.temp_theta = 0.0;
-    this.anim_id = null;
+    this.tempTheta = 0.0;
+    this.animId = null;
   }
 
   componentDidMount() {
-    let center_of_wheel = {
+    let centerOfWheel = {
       x: parseFloat(this.wheel.style.width) / 2.0,
       y: parseFloat(this.wheel.style.height) / 2.0,
     };
 
-    console.log("x : ", center_of_wheel.x);
-    console.log("y : ", center_of_wheel.y);
-
     let newCards = [];
 
     //
-    //      This variable is to modified when changint the number of sponsors
+    //      This variable is to modified when changing the number of sponsors
     //
     let numCards = 32;
     let constant = numCards / 2;
@@ -41,7 +36,7 @@ export default class Wheel extends Component {
         <SponsorsCard
           theta={(Math.PI / parseFloat(constant)) * i}
           radius={this.state.radius}
-          center={center_of_wheel}
+          center={centerOfWheel}
           key={`card_${i}`}
           image={this.imageList[i]}
         />
@@ -54,7 +49,7 @@ export default class Wheel extends Component {
     return (
       <>
         <div
-          ref={(ref_id) => (this.wheel = ref_id)}
+          ref={(refId) => (this.wheel = refId)}
           style={Styles.Wheel}
           className="SponsorsWheel"
         >

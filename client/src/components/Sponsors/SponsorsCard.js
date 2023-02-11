@@ -7,7 +7,7 @@ class SponsorsCard extends React.Component {
     this.state = {};
   }
 
-  get_coords = (theta, radius) => {
+  getCoords = (theta, radius) => {
     return {
       x: Math.cos(theta) * radius,
       y: Math.sin(theta) * radius,
@@ -15,14 +15,14 @@ class SponsorsCard extends React.Component {
   };
 
   render() {
-    let new_coords = this.get_coords(this.props.theta, this.props.radius);
+    let newCoords = this.getCoords(this.props.theta, this.props.radius);
 
     return (
       <div
         style={{
           ...Styles.card,
-          left: `${this.props.center.x + new_coords.x}px`,
-          top: `${this.props.center.y - new_coords.y}px`,
+          left: `${this.props.center.x + newCoords.x}px`,
+          top: `${this.props.center.y - newCoords.y}px`,
         }}
         className="SponsorsCard"
       >
