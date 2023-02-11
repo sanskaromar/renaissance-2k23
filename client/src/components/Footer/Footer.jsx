@@ -11,15 +11,13 @@ const Footer = () => {
   return (
     <>
       <div className="Page  w-full bg-[#1b1c1c] pt-8">
-        <div className="Header text-white text-[48px] lg:text-[52px] flex flex-col justify-center items-center p-4">
+        <div className="Header text-white text-[48px] lg:text-[52px] flex flex-col justify-center align-middle items-center p-4 ">
           <p className="">We Have Top Executives</p>
           <p className="">And</p>
           <p>Startup Here</p>
         </div>
 
-        <div className="Content m-4 flex pt-10 pb-10  lg:h-[400px] flex-col lg:flex-row">
-          <div className="w-[120px] hidden lg:block"></div>
-
+        <div className="Content mt-4 mb-4 mr-10 ml-10 lg:ml-28 lg:mr-28 flex pt-10 pb-10  lg:h-[400px] flex-col  lg:flex-row">
           <div className="flex flex-col lg:flex-row w-full">
             <div className="text-white  w-full flex flex-col justify-around">
               <div className="flex p-4">
@@ -53,12 +51,6 @@ const Footer = () => {
               ></iframe>
             </div>
           </div>
-
-          <div className="mt-10 lg:w-[120px] flex  items-center lg:items-end justify-center">
-            <button className="bg-[#354F52] h-[47px] w-[47px] flex  items-center justify-center shadow-2xl">
-              <RiArrowDropUpLine className="text-[30px] text-white" />
-            </button>
-          </div>
         </div>
 
         <div className="footer bg-[#2F3E46] ">
@@ -67,38 +59,42 @@ const Footer = () => {
 
             <div className="Event w-3/4  ">
               <div className="bg-gradient-to-r from-white to-gray-900 mt-20 mb-8 p-0.5 shadow-2xl">
-                <div className="bg-[#181818] h-full flex flex-col lg:flex-row pt-10 pb-10">
-                  <div className="h-80 flex flex-col justify-center  lg:ml-40">
-                    <p className="text-white text-[15px] mt-4 mb-4">
-                      EVENT <br></br>DETAILS
-                    </p>
-                    <p className="text-[#52796F] mt-4 mb-4">
-                      January 5 to 9,2019
-                    </p>
-                    <p className="text-white mt-4 mb-4">
-                      66 Road brolyln street BNG 272 new york
-                    </p>
-                    <p className="text-white mt-4 mb-4">View Map Locations</p>
+                <div className="bg-[#181818] h-full flex flex-col lg:flex-row pt-10 pb-10 pr-4 pl-4">
+                  <div className="flex w-full">
+                    <div className="h-80 flex flex-col justify-center text-left pl-10 lg:ml-40">
+                      <p className="text-white text-[15px] mt-4 mb-4">
+                        EVENT <br></br>DETAILS
+                      </p>
+                      <p className="text-[#52796F] mt-4 mb-4">
+                        January 5 to 9,2019
+                      </p>
+                      <p className="text-white mt-4 mb-4">
+                        66 Road brolyln street BNG 272 new york
+                      </p>
+                      <p className="text-white mt-4 mb-4">View Map Locations</p>
+                    </div>
                   </div>
 
-                  <div className="h-80 text-white flex flex-col justify-center lg:ml-40">
-                    <p>SOCIAL UPDATES</p>
-                    <p className="mt-12">
-                      You May Wonder : Why This Event Is So Popular
-                    </p>
+                  <div className="flex  justify-center  w-full lg:mr-80 lg:mt-10 pl-10 ">
+                    <div className="h-80 text-white flex flex-col justify-center text-left lg:ml-40">
+                      <p>SOCIAL UPDATES</p>
+                      <p className="mt-12">
+                        You May Wonder : Why This Event Is So Popular
+                      </p>
 
-                    <div className="icons justify-around flex h-40 items-center text-3xl ml-20 mr-20">
-                      <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-2xl">
-                        <BsFacebook className=" text-[#2F3E46] rounded-full shadow-2xl" />
-                      </div>
-                      <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-2xl">
-                        <BsTwitter className=" text-[#2F3E46] shadow-2xl" />
-                      </div>
-                      <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-2xl">
-                        <BsLinkedin className=" text-[#2F3E46] shadow-2xl" />
-                      </div>
-                      <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-2xl">
-                        <BsYoutube className=" text-[#2F3E46]" />
+                      <div className="icons justify-around flex h-40 items-center text-3xl  w-full">
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                          <BsFacebook className=" text-[#2F3E46] rounded-full shadow-2xl" />
+                        </div>
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                          <BsTwitter className=" text-[#2F3E46] shadow-2xl" />
+                        </div>
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                          <BsLinkedin className=" text-[#2F3E46] shadow-2xl" />
+                        </div>
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                          <BsYoutube className=" text-[#2F3E46]" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -109,7 +105,7 @@ const Footer = () => {
 
           {/* sdv */}
 
-          <div className=" flex w-full justify-center lg:items-end lg:justify-end pr-8 pb-5 ">
+          <div className=" flex w-full  lg:items-end justify-end pr-8 pb-5 ">
             <button className="bg-[#CAD2C5] h-[47px] w-[47px] flex items-center justify-center shadow-2xl">
               <RiArrowDropUpLine className="text-[30px]" />
             </button>
