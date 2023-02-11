@@ -8,14 +8,26 @@
   animation-name: rotateAntiClockwise;
   animation-duration: 120s;
   animation-iteration-count: infinite;
-  /* animation-timing-function: linear; */
+  height: 120px;
+  width: 160px;
+  border-radius: 60px;
 }
 
 .SponsorsWheel {
   animation-name: rotateClockwise;
   animation-duration: 120s;
   animation-iteration-count: infinite;
-  /* animation-timing-function: linear; */
+}
+
+@media screen and (min-width: 480px) {
+  .SponsorsCard {
+    animation-name: rotateAntiClockwise;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    height: 150px;
+    width: 200px;
+    border-radius: 75px;
+  }
 }
 
 @keyframes rotateAntiClockwise {
