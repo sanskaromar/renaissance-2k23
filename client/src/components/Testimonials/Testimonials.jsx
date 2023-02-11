@@ -6,27 +6,33 @@ import Quote from "./quote.png";
 const Testimonials = () => {
   const [people] = useState(data);
   const [index, setIndex] = useState(0);
+
   useEffect(() => {
     const lastIndex = people.length - 1;
-    if (index < 0) setIndex(lastIndex);
-
-    if (index > lastIndex) setIndex(0);
-  }, [index, people]);
-
-  useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
+      if (index < 0) setIndex(lastIndex);
+      if (index === lastIndex) setIndex(0);
     }, 5000);
     return () => {
       clearInterval(slider);
     };
-  }, [index]);
+  }, [index, people]);
+
+  const prevSlide = () => {
+    if (index === 0) setIndex(people.length - 1);
+    else setIndex(index - 1);
+  };
+  const nextSlide = () => {
+    if (index === people.length - 1) setIndex(0);
+    else setIndex(index + 1);
+  };
 
   return (
-    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-full items-center bg-[#84A98C] xl:mx-40 lg:mx-40 md:mx-36 sm:mx-20 mb-10 py-10 px-10 my-2">
+    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-screen items-center bg-[#84A98C]  py-10 px-10 ">
       {/* prev arrow */}
       <div className="section-left">
-        <button className="prev" onClick={() => setIndex(index - 1)}>
+        <button className="" onClick={prevSlide}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -45,43 +51,45 @@ const Testimonials = () => {
         </button>
       </div>
       {/* container of cards */}
-      <div className="section-center touch-none w-full h-full  flex  overflow-y-hidden overflow-x-hidden ">
+      <div className="section-center flex items-center touch-none w-full h-full  overflow-y-hidden overflow-x-hidden ">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, headline, text } = item;
-          let position = "nextSlide";
-          if (indexPeople === index) position = "activeSlide";
+          let position = "nextSlide hidden";
+          if (indexPeople === index) position = "activeSlide flex-grow";
 
           if (
             indexPeople === index - 1 ||
             (index === 0 && indexPeople === people.length - 1)
           )
-            position = "lastSlide";
+            position = "lastSlide hidden";
 
           return (
-            <article className={position} key={id}>
+            <article className={`${position}`} key={id}>
               <div className=" my-4 ">
                 <div
                   id="height"
-                  className=" bg-white relative rounded-3xl px-4 py-12  hover:cursor-pointer hover:scale-95 ease-in-out duration-300 w-full h-full flex xl:flew-row lg:md: flex-col sm:flex-row justify-around hover:shadow-2xl hover:shadow-grey-100"
+                  className=" bg-white relative flex flex-col flex-grow rounded-3xl px-4 py-12 item-center  w-full h-full  xl:flew-row lg:md: flex-col sm:flex-row justify-around "
                 >
                   <div className="flex flex-col  xl:w-1/2 lg:w-1/2 md:w-1/2 items-center">
-                    <div className="w-20 h-20 rounded-full mb-2">
+                    <div className="w-20 h-20 lg:md:sm:w-40 lg:md:sm:h-40 rounded-full mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
                       <img
                         src={image}
                         alt={name}
                         className="person-img object-fit rounded-full "
                       />
                     </div>
-                    <div className="pb-1 mt-8">{name}</div>
+                    <div className="pb-1 text-center font-bold text-lg mt-8">
+                      {name}
+                    </div>
                     <div>{title}</div>
                   </div>
                   <div className="xl:w-1/2 lg:w-1/2 md:w-1/2">
                     <div className="xl:h-90 lg:h-80 md:h-75  ">
-                      <div className="mb-4 mt-4 font-bold text-lg text-center ">
+                      <div className="mb-4 sm:mb-1 mt-4 sm:mt-1 font-bold text-lg text-center ">
                         {headline}
                       </div>
                       <div>
-                        <p className="text-center px-8 md:px-4 sm:px-1 text-wrap">
+                        <p className="text-center px-2 lg:md:px-4 sm:px-2 text-wrap">
                           {text}
                         </p>
                       </div>
@@ -99,7 +107,7 @@ const Testimonials = () => {
 
       {/* next arrow */}
       <div className="section-right">
-        <button className="next" onClick={() => setIndex(index + 1)}>
+        <button className="" onClick={nextSlide}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
