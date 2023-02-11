@@ -12,8 +12,8 @@ const Footer = () => {
     <>
       <div className="Page  w-full bg-[#1b1c1c] pt-8">
         <div className="Header text-white text-[48px] lg:text-[52px] flex flex-col justify-center align-middle items-center p-4 ">
-          <p className="">We Have Top Executives</p>
-          <p className="">And</p>
+          <p>We Have Top Executives</p>
+          <p>And</p>
           <p>Startup Here</p>
         </div>
 
@@ -102,8 +102,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* sdv */}
 
           <div className=" flex w-full  lg:items-end justify-end pr-8 pb-5 ">
             <button className="bg-[#CAD2C5] h-[47px] w-[47px] flex items-center justify-center shadow-2xl">
