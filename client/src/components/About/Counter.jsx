@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from "react";
 function Counter({ last }) {
   const [count, setCount] = useState(null);
   const myref = useRef();
-  let pageload = 0;
   const num = useRef(0);
   const t = last;
   const timer = 800 / t;
@@ -17,9 +16,9 @@ function Counter({ last }) {
     }
   };
   useEffect(() => {
-    const observer = new IntersectionObserver(() => {
-      pageload++;
-      if (pageload > 1) updatecount();
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) updatecount();
     });
     observer.observe(myref.current);
     return;
