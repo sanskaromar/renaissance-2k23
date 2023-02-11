@@ -13,14 +13,14 @@ article.lastSlide {
 article.nextSlide {
   transform: translateX(100%);
 }
-.prev{
-    position: absolute;
-    top: 200px;
-    transform: translateY(-50%);
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    transition: all 0.3s linear;
+.prev {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
 }
 .next {
   position: absolute;
