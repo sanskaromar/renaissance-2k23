@@ -19,9 +19,12 @@ body {
     font-size: 2rem;
     border-radius: 50%;
     background-color: #84a98c;
+    transition: all 0.1s;
   }
   .space:hover {
     background-color: #8f938c;
+    /* font-size: 2.2rem; */
+    margin-top: -8px;
   }
   .all {
     display: flex;
