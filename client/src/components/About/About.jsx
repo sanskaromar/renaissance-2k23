@@ -1,25 +1,28 @@
-import React, { useState } from "react";
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
+import Counter from "./Counter";
 
 function About() {
   //to set state for numbers counting up on scrolling
-  const [counterOn, setCounterOn] = useState(false);
-
   return (
     <div>
       {/* div for the main section */}
-      <div className="relative bg-[#354F52] h-screen">
+      <div className="relative bg-[#354F52] h-screen ">
         <div className="font-['Raleway'] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-6xl text-left text-[#84A98C]">
           RENAISSANCE <br />
           <span className=" text-white">7.0</span>
+        </div>
+        <div className="absolute bottom-[5rem] right-[2rem] md:right-[5rem] text-white font-['Raleway'] text-right text-xs">
+          <span className="text-xl sm:text-2xl md:text-4xl">12 AUG 2021</span>
+          <br />
+          <span className="">3968 CARSON STREET, SAN DIEGO, CA 92101</span>
+          <br />
+          <button className="p-3 border-2 border-white mt-6">BUY TICKET</button>
         </div>
       </div>
       {/* div for the about section */}
       <div className="md:flex md:flex-row md:items-center md:h-[30rem]">
         {/* div for seat confirmation and heading */}
         <div className="relative h-[18rem] md:w-1/3 md:h-[30rem]">
-          <div className="text-4xl font-['Raleway'] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left text-[#354F52] ">
+          <div className="text-4xl font-['Raleway'] absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-1/2 text-[#354F52] ">
             ABOUT
             <br />
             DESIGN
@@ -43,51 +46,26 @@ function About() {
               discussion on ideas that possess the potential to turn the issues
               that plague us into opportunities.{" "}
             </div>
-            <ScrollTrigger
-              onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
-              className="text-[#354F52] flex flex-row px-12"
-            >
-              <div className="pb-12 w-1/3 text-left">
-                {counterOn && (
-                  <CountUp
-                    className="text-2xl"
-                    start={0}
-                    end={8}
-                    duration={1}
-                    delay={0}
-                  />
-                )}
-                +<br />
+            <div className="text-[#354F52] flex flex-row px-12 text-sm sm:text-xl md:text-2xl">
+              <div className="pb-12 w-1/3 text-left ">
+                <div className="text-3xl font-semibold text-[#1D2630]">
+                  <Counter last={8} />
+                </div>
                 Events
               </div>
               <div className="pb-12 w-1/3  text-left">
-                {counterOn && (
-                  <CountUp
-                    className="text-2xl"
-                    start={0}
-                    end={9}
-                    duration={1}
-                    delay={0}
-                  />
-                )}
-                +<br />
+                <div className="text-3xl font-semibold text-[#1D2630]">
+                  <Counter last={9} />
+                </div>
                 Speakers
               </div>
-              <div className="pb-12 w-1/3  text-left">
-                {counterOn && (
-                  <CountUp
-                    className="text-2xl"
-                    start={0}
-                    end={25}
-                    duration={1}
-                    delay={0}
-                  />
-                )}
-                +<br />
+              <div className="pb-12 w-1/3  text-left ">
+                <div className="text-3xl font-semibold text-[#1D2630]">
+                  <Counter last={25} />
+                </div>
                 Sponsors
               </div>
-            </ScrollTrigger>
+            </div>
           </div>
         </div>
       </div>
