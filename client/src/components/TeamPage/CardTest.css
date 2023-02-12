@@ -16,15 +16,16 @@ body {
     justify-content: space-around;
   }
   .space {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 8px;
+    margin-right: 8px;
     border-radius: 50%;
     background-color: #84a98c;
     transition: all 0.1s;
   }
   .space:hover {
     background-color: #8f938c;
-    /* font-size: 2.2rem; */
-    margin-top: -8px;
+    padding: 2px;
   }
   .all {
     display: flex;
@@ -121,13 +122,13 @@ body {
     background-color: #84a98c;
     width: 10px;
     border-radius: 3px 0 0 3px;
-    height: 38px;
+    height: 45px;
     margin-right: 50px;
   }
   .info {
-    width: 300px;
+    width: 270px;
     border-radius: 2px;
-    height: 38px;
+    height: 45px;
     background-color: #cad2c5;
     display: flex;
     align-items: center;

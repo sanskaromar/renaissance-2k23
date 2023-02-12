@@ -3,6 +3,7 @@ import {
   AiFillFacebook,
   AiFillTwitterCircle,
   AiFillLinkedin,
+  AiFillYoutube,
 } from "react-icons/ai";
 import "./CardTest.css";
 const CardTest = () => {
@@ -33,10 +34,13 @@ const CardTest = () => {
                 <AiFillFacebook className="space" />
               </a>
               <a href="">
+                <AiFillTwitterCircle className="space" />
+              </a>
+              <a href="">
                 <AiFillLinkedin className="space" />
               </a>
               <a href="">
-                <AiFillTwitterCircle className="space" />
+                <AiFillYoutube className="space" />
               </a>
             </div>
           </div>
@@ -65,10 +69,13 @@ const CardTest = () => {
                 <AiFillFacebook className="space" />
               </a>
               <a href="">
+                <AiFillTwitterCircle className="space" />
+              </a>
+              <a href="">
                 <AiFillLinkedin className="space" />
               </a>
               <a href="">
-                <AiFillTwitterCircle className="space" />
+                <AiFillYoutube className="space" />
               </a>
             </div>
           </div>
@@ -97,10 +104,13 @@ const CardTest = () => {
                 <AiFillFacebook className="space" />
               </a>
               <a href="">
+                <AiFillTwitterCircle className="space" />
+              </a>
+              <a href="">
                 <AiFillLinkedin className="space" />
               </a>
               <a href="">
-                <AiFillTwitterCircle className="space" />
+                <AiFillYoutube className="space" />
               </a>
             </div>
           </div>
@@ -128,10 +138,13 @@ const CardTest = () => {
                 <AiFillFacebook className="space" />
               </a>
               <a href="">
+                <AiFillTwitterCircle className="space" />
+              </a>
+              <a href="">
                 <AiFillLinkedin className="space" />
               </a>
               <a href="">
-                <AiFillTwitterCircle className="space" />
+                <AiFillYoutube className="space" />
               </a>
             </div>
           </div>
@@ -159,10 +172,13 @@ const CardTest = () => {
                 <AiFillFacebook className="space" />
               </a>
               <a href="">
+                <AiFillTwitterCircle className="space" />
+              </a>
+              <a href="">
                 <AiFillLinkedin className="space" />
               </a>
               <a href="">
-                <AiFillTwitterCircle className="space" />
+                <AiFillYoutube className="space" />
               </a>
             </div>
           </div>
@@ -190,7 +206,13 @@ const CardTest = () => {
                 <AiFillFacebook className="space" />
               </a>
               <a href="">
+                <AiFillTwitterCircle className="space" />
+              </a>
+              <a href="">
                 <AiFillLinkedin className="space" />
+              </a>
+              <a href="">
+                <AiFillYoutube className="space" />
               </a>
               <a href="">
                 <AiFillTwitterCircle className="space" />
