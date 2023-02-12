@@ -138,7 +138,6 @@ function Navbar() {
             </motion.div>
           </div>
         )}
-        ;
       </div>
     </nav>
   );
