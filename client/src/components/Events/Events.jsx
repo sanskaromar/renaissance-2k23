@@ -72,10 +72,10 @@ const Events = () => {
             <div className="bg-custom-dark">
               <h1
                 id="heading"
-                className="text-gray-300 sm:text-center lg:text-left text-4xl font-bold mb-10 lg:mb-12 tracking-wider"
+                className="text-gray-300 sm:text-center lg:text-left text-4xl font-bold mb-10 lg:mb-12 tracking-wide"
               >
                 <span className="text-5xl">O</span>UR{" "}
-                <span className="text-5xl ml-2">E</span>VENTS
+                <span className="text-5xl ml-1">E</span>VENTS
               </h1>
             </div>
             <div className="lg:pr-10">
