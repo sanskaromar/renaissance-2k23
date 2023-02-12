@@ -1,11 +1,11 @@
 import "./App.css";
-// import About from "./components/About/About";
+import About from "./components/About/About";
 import Events from "./components/Events/Events";
 
 function App() {
   return (
     <div className="App">
-      {/* <About /> */}
+      <About />
       <Events />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
