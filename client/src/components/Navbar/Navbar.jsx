@@ -33,14 +33,14 @@ const HamClose = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={1.5}
+    stroke-width="1.5"
     stroke="white"
-    className="w-10 h-10"
+    class="w-10 h-10"
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M6 18L18 6M6 6l12 12"
     />
   </svg>
 );
@@ -52,14 +52,14 @@ function Navbar() {
     // navbar component
     <nav className="w-full bg-custom-dark flex flex-row justify-between z-50 fixed">
       {/* logo  */}
-      <div className="logo px-4 py-4 flex justify-center items-center w-1/2 h-1/2 xs:px-8 xs:py-8 ">
+      <div className="logo px-4 py-4 md:px-2 lg:px-4 lg:py-4 flex justify-center items-center w-1/3 h-1/3 lg:w-1/2 lg:h-1/2xs:px-8 xs:py-8 ">
         <a href="#">
           <img className="cursor-pointer" src={logo} alt="Renaissance Logo" />
         </a>
       </div>
 
       {/* Navigation Menu  */}
-      <div className="container hidden md:flex justify-end px-12">
+      <div className="container hidden md:flex justify-end px-3 lg:px-12">
         <ul className="text-custom-nav text-xs flex flex-row justify-center items-center">
           {navItems.map((item) => (
             <a
@@ -77,7 +77,7 @@ function Navbar() {
           ))}
           <a
             href="#"
-            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent md:hidden lg:flex"
+            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent"
           >
             <li className="cursor-pointer">CONFIRM YOUR SEAT</li>
           </a>
@@ -85,19 +85,14 @@ function Navbar() {
       </div>
 
       {/* Hamburger Navigation Menu  */}
-      <div className="md:hidden relative flex justify-center items-center cursor-pointer">
+      <div className="md:hidden relative flex justify-center items-center cursor-pointer mr-3">
         <div className="flex" onClick={() => setToggle(true)}>
           {HamOpen}
         </div>
         {toggle && (
           <div>
-            {/* extra transparent div */}
-            <div
-              className="md:hidden fixed top-0 left-0 right-0 w-screen h-screen flex bg-transparent z-40"
-              onClick={() => setToggle(false)}
-            ></div>
             <motion.div
-              className="md:hidden fixed top-0 left-0 right-0 p-1 w-screen flex justify-end items-end flex-col bg-custom-dark opacity-90 shadow-lg py-10 z-50"
+              className="md:hidden fixed top-0 left-0 right-0 p-1 w-screen h-screen flex justify-end items-end flex-col bg-custom-dark shadow-lg z-50 pb-4"
               animate={{ y: [-500, 0] }}
               transition={{
                 type: "spring",
@@ -112,11 +107,7 @@ function Navbar() {
 
               {/* logo */}
               <div className="logo m-0 p-1 mb-10 w-full flex justify-center items-center">
-                <img
-                  className="cursor-pointer w-1/2 "
-                  src={logo}
-                  alt="Renaissance Logo"
-                />
+                <img className="w-1/2" src={logo} alt="Renaissance Logo" />
               </div>
 
               {/* Nav-items  */}
@@ -128,17 +119,17 @@ function Navbar() {
                   >
                     <a
                       href="#"
-                      className="text-sm xs:text-base font-light text-custom-light"
+                      className="text-xs xs:text-base font-light text-custom-light"
                     >
                       {item.toUpperCase()}
                     </a>
                   </li>
                 ))}
 
-                <li className="mx-10 my-10 p-4 cursor-pointer bg-custom-secondary">
+                <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm">
                   <a
                     href="#"
-                    className="xs:text-xl text-base font-bold text-custom-accent"
+                    className="text-xs xs:text-xl font-bold text-custom-accent"
                   >
                     CONFIRM YOUR SEAT
                   </a>

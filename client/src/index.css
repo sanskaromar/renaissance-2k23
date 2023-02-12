@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   /* default theme */
   :root {
     /* --var-name: rgb value */
@@ -16,7 +15,7 @@
     --bg-dark: 53, 79, 82;
     --bg-light: 253, 252, 255;
     --bg-secondary: 202, 210, 197;
-    
+
     --border-accent: 253, 252, 255;
     --border-primary: 253, 252, 255;
     --border-secondary: 253, 252, 255;
@@ -64,4 +63,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
