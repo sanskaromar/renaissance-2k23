@@ -214,9 +214,6 @@ const CardTest = () => {
               <a href="">
                 <AiFillYoutube className="space" />
               </a>
-              <a href="">
-                <AiFillTwitterCircle className="space" />
-              </a>
             </div>
           </div>
         </div>
