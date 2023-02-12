@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About/About";
+import Events from "./components/Events/Events";
 import Sponsors from "./components/Sponsors/Sponsors";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
   return (
     <>
       <About />
+      <Events />
       <Sponsors ImageList={List} />;
     </>
   );
