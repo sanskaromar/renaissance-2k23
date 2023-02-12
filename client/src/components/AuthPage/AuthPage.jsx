@@ -88,7 +88,7 @@ const Register = () => {
                 ></input>
               </div>
               <div className="mb-[24px] flex items-center justify-center">
-                <div className="mr-[10px] flex justify-center items-center translate-y-[1px]">
+                <div className="mr-[10px] flex justify-center items-center translate-y-[-10px]">
                   <BsGenderAmbiguous size="21px" color="#2F3E46" />
                 </div>
                 <select

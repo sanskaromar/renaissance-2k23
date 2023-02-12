@@ -91,7 +91,7 @@ const Layout = () => {
               <RiFacebookCircleFill size="30px" color="#3b5998" />
             </div>
             <div className="rounded-full cursor-pointer mr-[30px] bg-sec p-[4px] hover:rounded-[5000px] hover:scale-110 transition-all duration-1000 bg-white p-[7px]">
-              <BsGoogle size="25px" color="#db3236" />
+              <BsGoogle size="23px" color="#db3236" />
             </div>
             <div className="rounded-full cursor-pointer bg-sec p-[4px] hover:rounded-[5000px]  hover:scale-110 transition-all duration-1000 bg-white p-[5px]">
               <AiFillTwitterCircle size="29px" color="#1DA1F2" />
