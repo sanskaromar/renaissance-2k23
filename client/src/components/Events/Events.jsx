@@ -59,16 +59,8 @@ const Events = () => {
   };
 
   return (
-    <div className="bg-custom-dark h-screen">
-      <div className="bg-custom-dark sm:pb-6">
-        <div className="bg-custom-dark">
-          <h1
-            id="heading"
-            className="text-gray-300 text-center text-2xl pb-4 font-bold pt-12"
-          >
-            OUR EVENTS
-          </h1>
-        </div>
+    <div className="bg-custom-dark h-screen lg:flex lg:justify-center lg:items-center">
+      <div className="bg-custom-dark sm:pb-6 lg:pt-6">
         <div
           className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-10"
           ref={animateRef}
@@ -77,10 +69,18 @@ const Events = () => {
             id="photo-detail"
             className="pt-10 lg:pl-10 pb-10 lg:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center lg:block"
           >
+            <div className="bg-custom-dark">
+              <h1
+                id="heading"
+                className="text-gray-300 sm:text-center lg:text-left text-2xl font-bold mb-10"
+              >
+                OUR EVENTS
+              </h1>
+            </div>
             <div className="lg:pr-10">
               <h1
                 id="photo-title"
-                className="sm:text-4xl lg:text-5xl text-gray-400 font-bold mb-8"
+                className="sm:text-4xl lg:text-left lg:text-5xl text-gray-400 font-bold mb-8"
               >
                 {eventsData[currState].title}
               </h1>
