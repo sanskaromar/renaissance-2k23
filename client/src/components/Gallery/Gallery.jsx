@@ -15,7 +15,7 @@ function SampleNextArrow(props) {
       onClick={onClick}
     >
       <FaChevronCircleRight
-        style={{ ...style, color: "black", fontSize: "40px" }}
+        style={{ ...style, color: "rgb(47,62,70)", fontSize: "40px" }}
       />
     </div>
   );
@@ -30,7 +30,7 @@ function SamplePrevArrow(props) {
     >
       {" "}
       <FaChevronCircleLeft
-        style={{ ...style, color: "black", fontSize: "40px" }}
+        style={{ ...style, color: "rgb(47,62,70)", fontSize: "40px" }}
       />{" "}
     </div>
   );
