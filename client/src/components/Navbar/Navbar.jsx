@@ -106,8 +106,8 @@ function Navbar() {
               </div>
 
               {/* logo */}
-              <div className="logo m-0 p-1 mb-10 w-full flex justify-center items-center">
-                <img className="w-1/2" src={logo} alt="Renaissance Logo" />
+              <div className="logo p-1 my-5 w-full flex justify-center items-center">
+                <img className="w-[70%]" src={logo} alt="Renaissance Logo" />
               </div>
 
               {/* Nav-items  */}
@@ -119,7 +119,7 @@ function Navbar() {
                   >
                     <a
                       href="#"
-                      className="text-xs xs:text-base font-light text-custom-light"
+                      className="text-base xs:text-base font-light text-custom-light"
                     >
                       {item.toUpperCase()}
                     </a>
@@ -129,7 +129,7 @@ function Navbar() {
                 <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm">
                   <a
                     href="#"
-                    className="text-xs xs:text-xl font-bold text-custom-accent"
+                    className="text-base xs:text-xl font-bold text-custom-accent"
                   >
                     CONFIRM YOUR SEAT
                   </a>
