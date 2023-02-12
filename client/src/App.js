@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./components/About/About";
 import Sponsors from "./components/Sponsors/Sponsors";
 
 function App() {
@@ -36,7 +37,12 @@ function App() {
     "./SponsorsImages/ecellLogo.png",
     "./SponsorsImages/ecellLogo.png",
   ];
-  return <Sponsors ImageList={List} />;
+  return (
+    <>
+      <About />
+      <Sponsors ImageList={List} />;
+    </>
+  );
 }
 
 export default App;

@@ -6,13 +6,13 @@ import "./Sponsors.css";
 export default function Sponsors(props) {
   const styleSponsorsMargin = {
     width: "100vw",
-    maxHeight: "120vw"
+    maxHeight: "120vw",
   };
   const style2 = {
     position: "relative",
     width: "100%",
-    overflow: "hidden"
-  }
+    overflow: "hidden",
+  };
   return (
     <div style={style2} className="prevent-select">
       <div className="h-screen bg-[#84A98C]" style={styleSponsorsMargin}>
