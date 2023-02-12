@@ -1,7 +1,9 @@
 import "./App.css";
+
 import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Sponsors from "./components/Sponsors/Sponsors";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const List = [
@@ -43,6 +45,7 @@ function App() {
       <About />
       <Events />
       <Sponsors ImageList={List} />;
+      <Footer />
     </>
   );
 }
