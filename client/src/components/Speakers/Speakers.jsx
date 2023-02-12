@@ -23,25 +23,25 @@ export default class Responsive extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
-          }
+            dots: true,
+          },
         },
         {
-          breakpoint: 950,
+          breakpoint: 1013,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            initialSlide: 2
-          }
+            initialSlide: 2,
+          },
         },
         {
           breakpoint: 660,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
     return (
       <div className="bg-back text-white">
@@ -78,22 +78,3 @@ export default class Responsive extends Component {
     );
   }
 }
-
-// const Speaker=()=>{
-//     return(
-//         <>
-//         <h1 className="font-bold mb-6 mt-4 text-5xl">SPEAKERS</h1>
-//         <div className="flex">
-//         <Card/>
-//         <Card/>
-//         <Card/>
-//         <Card/>
-//         <Card/>
-//         <Card/>
-//         <Card/>
-//         </div>
-//         </>
-//     )
-
-// }
-// export default Speaker;
