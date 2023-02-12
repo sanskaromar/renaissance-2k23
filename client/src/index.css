@@ -40,6 +40,8 @@
 html,
 #root {
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App {
@@ -59,4 +61,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html,
+body {
+  overflow-x: hidden;
 }

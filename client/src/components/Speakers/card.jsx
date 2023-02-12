@@ -23,7 +23,7 @@ const Card = () => {
               Mark A. Parker
             </h1>
 
-            <p className="text-neutral-700 flex justify-center p-2 text-gray-200">
+            <p className="text-neutral-700 flex justify-center p-2 ">
               Web Developer
             </p>
           </div>

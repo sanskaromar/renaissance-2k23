@@ -25,6 +25,7 @@ module.exports = {
         twitter: "#1DA1F2",
         facebook: "#4267B2",
         instagram: "#e95950",
+        back:"#2f3e46"
         custom: {
           accent: withOpacity("--color-accent"),
           secondary: withOpacity("--color-secondary"),
