@@ -29,9 +29,9 @@ const Testimonials = () => {
   };
 
   return (
-    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-screen items-center bg-[#84A98C]  py-10 px-10 ">
+    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-screen items-center bg-[#84A98C]  py-10 px-10 justify-around">
       {/* prev arrow */}
-      <div className="section-left">
+      <div className="section-left ">
         <button
           className="hover:cursor-pointer hover:scale-125  ease-in-out duration-300 "
           onClick={prevSlide}
@@ -54,7 +54,7 @@ const Testimonials = () => {
         </button>
       </div>
       {/* container of cards */}
-      <div className=" section-center flex items-center touch-none m-8  w-full h-full  overflow-y-hidden overflow-x-hidden ">
+      <div className=" section-center flex items-center touch-none m-8  w-1/2 h-full  overflow-y-hidden overflow-x-hidden ">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, headline, text } = item;
           let position = "nextSlide hidden";
@@ -71,10 +71,10 @@ const Testimonials = () => {
               <div className=" my-2 ">
                 <div
                   id="height"
-                  className=" bg-white  relative flex flex-col flex-grow rounded-3xl h-full py-12 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
+                  className=" bg-white  relative flex flex-col flex-grow rounded-3xl max-w-[60rem] h-full py-12 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
                 >
-                  <div className="flex flex-col  xl:w-2/5 lg:w-2/5 md:w-2/5 items-center">
-                    <div className="w-20 h-20 xl:lg:w-40 xl:lg:h-40 md:w-40 sm:w-40 md:h-40 sm:h-40  mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
+                  <div className="flex flex-col  xl:w-2/5 lg:w-2/5 md:w-2/5 md:pl-6 items-center">
+                    <div className="w-20 h-20 xl:lg:w-40 xl:lg:h-40 md:w-40  sm:w-40 md:h-40 sm:h-40  mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
                       <img
                         src={image}
                         alt={name}
@@ -100,7 +100,7 @@ const Testimonials = () => {
                   </div>
                   <div className="absolute top-2 right-10">
                     <img
-                      className="w-10 h-10 xl:lg:w-30 xl:lg:h-30 md:w-20 sm:w-20 md:h-20 sm:h-20"
+                      className="w-10 h-10 xl:lg:w-30 xl:lg:h-30 md:w-15 sm:w-15 md:h-15 sm:h-15"
                       src={Quote}
                       alt=""
                     />
@@ -113,7 +113,7 @@ const Testimonials = () => {
       </div>
 
       {/* next arrow */}
-      <div className="section-right">
+      <div className="section-right ">
         <button
           className="hover:cursor-pointer hover:scale-125 ease-in-out duration-300"
           onClick={nextSlide}
