@@ -54,7 +54,7 @@ const Testimonials = () => {
         </button>
       </div>
       {/* container of cards */}
-      <div className=" section-center flex items-center touch-none md:m-8 w-full h-full  overflow-y-hidden overflow-x-hidden ">
+      <div className=" section-center flex items-center touch-none m-8  w-full h-full  overflow-y-hidden overflow-x-hidden ">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, headline, text } = item;
           let position = "nextSlide hidden";
@@ -68,23 +68,23 @@ const Testimonials = () => {
 
           return (
             <article className={`${position}`} key={id}>
-              <div className=" my-4 ">
+              <div className=" my-2 ">
                 <div
                   id="height"
                   className=" bg-white  relative flex flex-col flex-grow rounded-3xl py-24 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
                 >
                   <div className="flex flex-col  xl:w-2/5 lg:w-2/5 md:w-2/5 items-center">
-                    <div className="w-20 h-20 lg:md:sm:w-35 lg:md:sm:h-35 rounded-full mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
+                    <div className="w-20 h-20 lg:md:sm:w-45 lg:md:sm:h-45  mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
                       <img
                         src={image}
                         alt={name}
-                        className="person-img object-fit rounded-full "
+                        className="person-img object-fit rounded-xl "
                       />
                     </div>
                     <div className="pb-1 text-center font-bold text-lg mt-8">
                       {name}
                     </div>
-                    <div>{title}</div>
+                    <div className="text-center text-wrap">{title}</div>
                   </div>
                   <div className="h-full xl:w-1/2 lg:w-1/2 md:w-1/2 items-center md:pl-8">
                     <div className="  max-w-[20rem] justify-center">
