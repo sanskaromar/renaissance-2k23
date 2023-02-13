@@ -29,9 +29,9 @@ const Testimonials = () => {
   };
 
   return (
-    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-screen items-center bg-[#84A98C]  py-10 px-10 justify-around">
+    <div className=" flex flex-row align-middle overflow-x-hidden overflow-y-hidden w-full h-screen items-center bg-[#84A98C]  py-10 px-2 justify-around">
       {/* prev arrow */}
-      <div className="section-left ">
+      <div className="section-left mr-2">
         <button
           className="hover:cursor-pointer hover:scale-125  ease-in-out duration-300 "
           onClick={prevSlide}
@@ -54,7 +54,7 @@ const Testimonials = () => {
         </button>
       </div>
       {/* container of cards */}
-      <div className=" section-center flex items-center touch-none m-8  w-1/2 h-full  overflow-y-hidden overflow-x-hidden ">
+      <div className=" section-center flex items-center touch-none   2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2   h-full  overflow-y-hidden overflow-x-hidden ">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, headline, text } = item;
           let position = "nextSlide hidden";
@@ -71,7 +71,7 @@ const Testimonials = () => {
               <div className=" my-2 ">
                 <div
                   id="height"
-                  className=" bg-white  relative flex  flex-grow rounded-3xl max-w-[60rem] h-full py-12 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
+                  className=" bg-white  relative flex  flex-grow rounded-3xl  xl:lg:md:max-w-[60rem] h-full py-12 px-2 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
                 >
                   <div className="flex flex-col  xl:w-2/5 lg:w-2/5 md:w-2/5 md:pl-6 items-center">
                     <div className="w-20 h-20 xl:lg:w-40 xl:lg:h-40 md:w-40  sm:w-40 md:h-40 sm:h-40  mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
@@ -81,14 +81,14 @@ const Testimonials = () => {
                         className="person-img object-cover object-center rounded-xl "
                       />
                     </div>
-                    <div className="pb-1 text-center font-bold text-lg mt-8">
+                    <div className="pb-1 text-center font-bold text-lg mt-8 ">
                       {name}
                     </div>
-                    <div className="text-center text-wrap">{title}</div>
+                    <div className="text-center text-wrap mb-4">{title}</div>
                   </div>
-                  <div className="h-full xl:w-1/2 lg:w-1/2 md:w-1/2 items-center md:pl-8">
+                  <div className="h-full xl:w-1/2 lg:w-1/2 md:w-1/2 items-center ">
                     <div className="  max-w-[20rem] justify-center">
-                      <div className=" sm:mb-1 sm:mt-1 font-bold text-xl text-center ">
+                      <div className=" mb-4  font-bold text-xl text-center ">
                         {headline}
                       </div>
                       <div className="justify-center items-center">
@@ -113,7 +113,7 @@ const Testimonials = () => {
       </div>
 
       {/* next arrow */}
-      <div className="section-right ">
+      <div className="section-right ml-2 ">
         <button
           className="hover:cursor-pointer hover:scale-125 ease-in-out duration-300"
           onClick={nextSlide}
