@@ -4,7 +4,7 @@ import { IoMdMusicalNote } from "react-icons/io";
 const Background = () => {
   return (
     <>
-      <div className="z-[1] bg-back bubbles absolute flex w-full h-full  overflow-x-hidden">
+      <div className="z-[1] bg-back bubbles absolute flex w-full h-full  overflow-x-hidden overflow-y-hidden">
         <span
           style={{
             boxShadow:

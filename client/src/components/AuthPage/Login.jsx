@@ -19,7 +19,7 @@ const Layout = () => {
     <>
       <Background />
       <div className="relative overflow-hidden bg-back  w-screen h-screen flex justify-center items-center p-[30px] sm:p-[50px] ">
-        <div className="p-[17px] sm:p-[30px] opacity-[0.85] z-[100] w-full h-[500px] sm:w-[500px] sm:h-[550px] bg-lgreen flex flex-col rounded">
+        <div className="p-[17px] sm:p-[30px] opacity-[0.85] z-20 w-full h-[500px] sm:w-[500px] sm:h-[550px] bg-lgreen flex flex-col rounded">
           <div className="mb-[25px] logo flex flex-col justify-center items-center w-full">
             <img className="w-[50px] h-[50px]" src={img}></img>
             <h1 className="tracking-[1.2px] text-white font-medium mt-[10px] text-sm sm:text-lg">
@@ -103,7 +103,7 @@ const Layout = () => {
               Not Registered yet?
             </p>
             <Link
-              to="/register"
+              to="/auth"
               className="text-[11.9px] sm:text-[14px] font-bold ml-[15px] tracking-[1px] text-[14px] text-back hover:text-slate-600"
             >
               Sign-Up

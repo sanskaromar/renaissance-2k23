@@ -18,7 +18,7 @@ const Register = () => {
     <>
       <Background />
       <div className="bg-back w-screen h-screen flex justify-center p-[50px] items-center p-[30px] sm:p-[50px]">
-        <div className=" w-screen opacity-[0.85] z-[100] sm:w-[500px] sm:h-[610px] bg-lgreen flex flex-col rounded p-[25px] sm:p-[50px]">
+        <div className=" w-screen opacity-[0.85] z-20 sm:w-[500px] sm:h-[610px] bg-lgreen flex flex-col rounded p-[25px] sm:p-[50px]">
           <div className="mb-[25px] logo flex flex-col justify-center items-center w-full">
             <img className="w-[50px] h-[50px]" src={img}></img>
             <h1 className="tracking-[1.2px] text-white font-medium mt-[10px] text-lg">
@@ -121,7 +121,7 @@ const Register = () => {
                 Already Have An Account💎
               </p>
               <Link
-                to="/"
+                to="/auth/login"
                 className="text-[11.5px] sm:text-[14px] font-bold ml-[15px] tracking-[1px] text-[14px] text-back hover:text-slate-600"
               >
                 Log-In
