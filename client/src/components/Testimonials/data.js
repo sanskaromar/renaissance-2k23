@@ -19,7 +19,7 @@ const people = [
     name: "Chetanya Golecha",
     title: "Co-Founder, Water Float ",
     headline: " Intuitive Design",
-    text: " I would like to give my personal congrats to entire team of NIT Allahabad for a wonderful event.The attendees were ecstatic than I have ever seen.",
+    text: " I would like to give my  congrats to entire team of NIT Allahabad for a wonderful event.The attendees were ecstatic than I have ever seen.",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const people = [
     name: "Mansi Matela",
     title: "Head Strategy & New Initiatives,SilverPus",
     headline: "  Thrilling Experience",
-    text: " I was thrilled to see such an amazing audience. The events made an impact to aspiring entrepreneurs. A platform for the genesis of great ideas. ",
+    text: " I was thrilled to see an amazing audience. The events made an impact to aspiring entrepreneurs. A platform for the genesis of great ideas. ",
   },
 ];
 export default people;

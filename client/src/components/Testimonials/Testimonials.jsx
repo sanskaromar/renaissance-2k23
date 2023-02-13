@@ -71,7 +71,7 @@ const Testimonials = () => {
               <div className=" my-2 ">
                 <div
                   id="height"
-                  className=" bg-white  relative flex flex-col flex-grow rounded-3xl max-w-[60rem] h-full py-12 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
+                  className=" bg-white  relative flex  flex-grow rounded-3xl max-w-[60rem] h-full py-12 items-center  xl:flew-row lg: flex-col md:sm:flex-row justify-between"
                 >
                   <div className="flex flex-col  xl:w-2/5 lg:w-2/5 md:w-2/5 md:pl-6 items-center">
                     <div className="w-20 h-20 xl:lg:w-40 xl:lg:h-40 md:w-40  sm:w-40 md:h-40 sm:h-40  mb-2 hover:cursor-pointer hover:scale-105 ease-in-out duration-300 ">
