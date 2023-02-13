@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 import About from "./components/About/About";
 import Events from "./components/Events/Events";
@@ -42,6 +43,7 @@ function App() {
   ];
   return (
     <>
+      <Navbar />
       <About />
       <Events />
       <Sponsors ImageList={List} />;
