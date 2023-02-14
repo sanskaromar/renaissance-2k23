@@ -30,6 +30,7 @@
     "max-depth": ["error", 5], // This rule enforces a maximum depth that blocks can be nested.
     // "multiline-comment-style": ["error", "starred-block"], // This rule enforces a particular style for multiline comments.
     "no-else-return": ["error", { "allowElseIf": false }], // This rule disallows unnecessary blocks following if and else statements.
-    "no-empty": ["error", { "allowEmptyCatch": true }] // This rule disallows empty block statements.
+    "no-empty": ["error", { "allowEmptyCatch": true }], // This rule disallows empty block statements.
+    "prettier/prettier": ["error", { "endOfLine": "auto" }] // This rule removes the errors in terminal while reloading the application.
   }
 }
