@@ -76,7 +76,7 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="#"
+            href="/auth"
             className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent"
           >
             <li className="cursor-pointer">CONFIRM YOUR SEAT</li>
@@ -127,12 +127,12 @@ function Navbar() {
                 ))}
 
                 <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm">
-                  <a
-                    href="#"
+                  <Link
+                    to="/auth"
                     className="text-base xs:text-xl font-bold text-custom-accent"
                   >
                     CONFIRM YOUR SEAT
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </motion.div>

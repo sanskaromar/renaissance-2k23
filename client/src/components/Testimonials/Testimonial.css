@@ -1,0 +1,17 @@
+article {
+  /* position: absolute; */
+  /* height: 100%;
+  width: 100%; */
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
