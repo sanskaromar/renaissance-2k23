@@ -41,6 +41,11 @@
 }
 
 /* Custom CSS for events hover animation */
+
+* {
+  user-select: none;
+}
+
 html,
 #root {
   height: 100%;
