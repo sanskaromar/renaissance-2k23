@@ -9,7 +9,8 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Register from "./components/AuthPage/AuthPage";
 import Layout from "./components/AuthPage/Login";
-
+import Speakers from "./components/Speakers/Speakers";
+import Gallery from "./components/Gallery/Gallery";
 function App() {
   const List = [
     "./SponsorsImages/ecellLogo.png",
@@ -43,7 +44,7 @@ function App() {
     "./SponsorsImages/ecellLogo.png",
     "./SponsorsImages/ecellLogo.png",
     "./SponsorsImages/ecellLogo.png",
-    "./SponsorsImages/ecellLogo.png",
+    "./SponsorsImages/ecellLogo.png"
   ];
 
   return (
@@ -57,6 +58,8 @@ function App() {
                 <Navbar />
                 <About />
                 <Events />
+                <Speakers />
+                <Gallery />
                 <Sponsors ImageList={List} />;
                 <Testimonials />
                 <Footer />

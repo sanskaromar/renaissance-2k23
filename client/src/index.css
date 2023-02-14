@@ -51,6 +51,11 @@ html,
   height: 100%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
