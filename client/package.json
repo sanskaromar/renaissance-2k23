@@ -13,7 +13,12 @@
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+=======
     "sass": "^1.58.0",
+>>>>>>> a671d48880a17959eed6cb9732240e4610b50c67
     "web-vitals": "^2.1.4"
   },
   "scripts": {

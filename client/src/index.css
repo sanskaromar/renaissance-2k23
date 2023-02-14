@@ -49,6 +49,8 @@
 html,
 #root {
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App {
@@ -70,6 +72,4 @@ code {
     monospace;
 }
 
-body::-webkit-scrollbar {
-  display: none;
 }

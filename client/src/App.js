@@ -1,4 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
+import Speakers from "./components/Speakers/Speakers.jsx";
+// import Gallery from "./components/Gallery/Gallery.jsx";
+import Carousel from "./components/Gallery/Gallery.jsx";
+=======
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -9,6 +14,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Register from "./components/AuthPage/AuthPage";
 import Layout from "./components/AuthPage/Login";
+>>>>>>> a671d48880a17959eed6cb9732240e4610b50c67
 
 function App() {
   const List = [
@@ -45,6 +51,9 @@ function App() {
     "./SponsorsImages/ecellLogo.png",
     "./SponsorsImages/ecellLogo.png",
   ];
+<<<<<<< HEAD
+  return <></>;
+=======
 
   return (
     <>
@@ -69,6 +78,7 @@ function App() {
       </BrowserRouter>
     </>
   );
+>>>>>>> a671d48880a17959eed6cb9732240e4610b50c67
 }
 
 export default App;
