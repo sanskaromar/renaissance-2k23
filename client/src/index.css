@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   /* default theme */
   :root {
@@ -13,11 +14,13 @@
     --bg-accent: 132, 169, 140;
     --bg-dark: 53, 79, 82;
     --bg-light: 253, 252, 255;
+    --bg-secondary: 202, 210, 197;
 
     --border-accent: 253, 252, 255;
     --border-primary: 253, 252, 255;
     --border-secondary: 253, 252, 255;
   }
+
   /* .dark-gradient {
     background: linear-gradient(
       180deg,
@@ -36,7 +39,13 @@
     );
   } */
 }
+
 /* Custom CSS for events hover animation */
+
+* {
+  user-select: none;
+}
+
 html,
 #root {
   height: 100%;
@@ -59,4 +68,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
