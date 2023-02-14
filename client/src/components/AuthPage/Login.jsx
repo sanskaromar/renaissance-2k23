@@ -12,7 +12,7 @@ const img = require("./rene.png");
 const Layout = () => {
   const [icon, seticon] = useState(true);
   const show = () => {
-    console.log("clicked");
+    // console.log("clicked");
     seticon(!icon);
   };
   return (
