@@ -50,7 +50,7 @@ function Navbar() {
 
   return (
     // navbar component
-    <nav className="w-full bg-custom-dark flex flex-row justify-between z-50 fixed">
+    <nav className="w-full bg-custom-dark flex flex-row justify-between z-50 sticky top-0">
       {/* logo  */}
       <div className="logo px-4 py-4 md:px-2 lg:px-4 lg:py-4 flex justify-center items-center w-1/3 h-1/3 lg:w-1/2 lg:h-1/2xs:px-8 xs:py-8 ">
         <a href="#">
