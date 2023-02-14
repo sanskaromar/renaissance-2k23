@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import EventFooter from "./EventFooter";
-import image from "../../assets/Events/Seven.jpeg";
+import img from "../../assets/EventPage/nayak.svg";
 
 const Nayak = () => {
   return (
@@ -10,9 +10,11 @@ const Nayak = () => {
         <div className="h-[200px] mb-[170px] z-10 w-full text-left text-9xl font-bold text-custom-secondary pl-[590px] tracking-wide absolute">
           NAYAK
         </div>
-        <div className="mr-[110px] w-[500px] z-0 relative">
-          <div className="w-full h-full opacity-75 bg-black absolute"></div>
-          <img className="" src={image} alt="" srcset="" />
+        <div>
+          <div className="mr-[110px] w-[500px] z-0 relative">
+            <div className="w-full h-full opacity-75 bg-black absolute"></div>
+            <img className="bg-white" src={img} alt="" srcset="" />
+          </div>
         </div>
         <div className="h-[300px] flex items-end">
           <div className="flex flex-col">
