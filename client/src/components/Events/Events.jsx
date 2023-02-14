@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Events.css";
 import eventsData from "./eventsDB";
 
@@ -92,21 +93,23 @@ const Events = () => {
             >
               {eventsData[currState].body}
             </p>
-            <button className="bg-gray-300 mt-10 p-2 pl-3 w-40 text-left rounded-sm font-semibold flex justify-left items-center">
-              READ MORE
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="ml-1 w-7 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </button>
+            <Link to={`/events/${eventsData[currState].link}`}>
+              <button className="bg-gray-300 mt-10 p-2 pl-3 w-40 text-left rounded-sm font-semibold flex justify-left items-center">
+                READ MORE
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="ml-1 w-7 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
           <div className="pb-10 sm:pt-5 lg:pt-12 lg:pr-10 sm:px-10 lg:px-0 lg:w-1/2">
             <div id="Gallery" className="w-full">
