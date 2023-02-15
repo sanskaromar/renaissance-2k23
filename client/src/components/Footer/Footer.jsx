@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <div className="Page  w-full bg-[#1b1c1c] pt-8">
-        <div className="Header text-white text-[48px] lg:text-[52px] flex flex-col justify-center align-middle items-center p-4 ">
+        <div className="Header text-white text-[48px] lg:text-[52px] flex flex-col text-center justify-center align-middle items-center p-4 ">
           <p>We Have Top Executives</p>
           <p>And</p>
           <p>Startup Here</p>
@@ -60,39 +60,39 @@ const Footer = () => {
             <div className="Event w-3/4  ">
               <div className="bg-gradient-to-r from-white to-gray-900 mt-20 mb-8 p-0.5 shadow-2xl">
                 <div className="bg-[#181818] h-full flex flex-col lg:flex-row pt-10 pb-10 pr-4 pl-4">
-                  <div className="flex w-full">
-                    <div className="h-80 flex flex-col justify-center text-left pl-10 lg:ml-40">
-                      <p className="text-white text-[15px] mt-4 mb-4">
+                  <div className="h-80 flex justify-center items-center text-left  w-full">
+                    <div className="">
+                      <p className="text-white text-[15px] mb-8">
                         EVENT <br></br>DETAILS
                       </p>
-                      <p className="text-[#52796F] mt-4 mb-4">
+                      <p className="text-[#52796F] mt-8 mb-8">
                         January 5 to 9,2019
                       </p>
-                      <p className="text-white mt-4 mb-4">
+                      <p className="text-white mt-8 mb-8">
                         66 Road brolyln street BNG 272 new york
                       </p>
-                      <p className="text-white mt-4 mb-4">View Map Locations</p>
+                      <p className="text-white mt-8 mb-4">View Map Locations</p>
                     </div>
                   </div>
 
-                  <div className="flex  justify-center  w-full lg:mr-80 lg:mt-10 pl-10 ">
-                    <div className="h-80 text-white flex flex-col justify-center text-left lg:ml-40">
+                  <div className="h-80 text-white flex justify-center items-center text-left w-full">
+                    <div className="mt-5">
                       <p>SOCIAL UPDATES</p>
                       <p className="mt-12">
-                        You May Wonder : Why This Event Is So Popular
+                        You May Wonder : Why This Event Popular
                       </p>
 
-                      <div className="icons justify-around flex h-40 items-center text-3xl  w-full">
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                      <div className="icons justify-start gap-2 lg:gap-3 flex h-40 items-center text-2xl">
+                        <div className="bg-[#CAD2C5]  w-10 h-10 rounded-full flex items-center justify-center  shadow-2xl">
                           <BsFacebook className=" text-[#2F3E46] rounded-full shadow-2xl" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                        <div className="bg-[#CAD2C5]  w-10 h-10 rounded-full flex md:flex items-center justify-center  shadow-2xl">
                           <BsTwitter className=" text-[#2F3E46] shadow-2xl" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                        <div className="bg-[#CAD2C5]  w-10 h-10 rounded-full flex items-center justify-center  shadow-2xl">
                           <BsLinkedin className=" text-[#2F3E46] shadow-2xl" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
+                        <div className="bg-[#CAD2C5]  w-10 h-10 rounded-full flex items-center justify-center  shadow-2xl">
                           <BsYoutube className=" text-[#2F3E46]" />
                         </div>
                       </div>
