@@ -4,11 +4,11 @@ import EventFooter from "./EventFooter";
 import img from "../../assets/EventPage/paneldiscussion.svg";
 
 //Carousel
-import img1 from "../../assets/Events/One.jpg";
-import img2 from "../../assets/Events/Two.jpg";
-import img3 from "../../assets/Events/Three.jpg";
-import img4 from "../../assets/Events/Four.jpeg";
-import img5 from "../../assets/Events/Five.jpg";
+import img1 from "../../assets/EventComponent/One.jpg";
+import img2 from "../../assets/EventComponent/Two.jpg";
+import img3 from "../../assets/EventComponent/Three.jpg";
+import img4 from "../../assets/EventComponent/Four.jpeg";
+import img5 from "../../assets/EventComponent/Five.jpg";
 
 const PanelDiscussion = () => {
   const [open, setOpen] = useState(false);
@@ -56,40 +56,73 @@ const PanelDiscussion = () => {
           DESCRIPTION
         </div>
         <div className="w-1/2 pr-80 pl-20 py-20 flex justify-center items-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum,
-          libero? Accusantium optio, tempora velit ratione officia repellendus
-          dolor dolores et praesentium, soluta sit quaerat totam aut laboriosam?
-          Consequuntur dolores vel ea expedita numquam voluptas, ut odit sed
-          laborum dolore, corporis magni harum. Quam fugiat reiciendis officia
-          iure! Hic, recusandae fugiat saepe vel fugit, assumenda voluptatum
-          minima ullam voluptatem debitis nobis unde adipisci iure quas
-          provident velit ipsa aspernatur ea obcaecati aliquid. Alias natus sed
-          error repudiandae, quas sit nostrum corrupti. Sapiente iste fugit
-          quaerat, dolores vero voluptas odit repellendus voluptate, tempora
-          sequi corrupti atque provident minus inventore, aperiam fugiat nemo!
+          Gain a better understanding of current trends, philosophies, and
+          methodologies when industry veterans, business gurus, venture
+          capitalists, and entrepreneurs debate and discuss ideas, perspectives,
+          and trends together
         </div>
       </div>
       <div className="">
-        <div className="bg-custom-dark flex pt-10">
-          <div className="w-1/2 pl-40 pr-10 py-10 flex justify-center items-center text-gray-300">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum,
-            libero? Accusantium optio, tempora velit ratione officia repellendus
-            dolor dolores et praesentium, soluta sit quaerat totam aut
-            laboriosam? Consequuntur dolores vel ea expedita numquam voluptas,
-            ut odit sed laborum dolore, corporis magni harum. Quam fugiat
-            reiciendis officia iure! Hic, recusandae fugiat saepe vel fugit,
-            assumenda voluptatum minima ullam voluptatem debitis nobis unde
-            adipisci iure quas provident velit ipsa aspernatur ea obcaecati
-            aliquid. Alias natus sed error repudiandae, quas sit nostrum
-            corrupti. Sapiente iste fugit quaerat, dolores vero voluptas odit
-            repellendus voluptate, tempora sequi corrupti atque provident minus
-            inventore, aperiam fugiat nemo!
+        <div className="bg-custom-dark flex pt-10 pb-10">
+          <div className="w-1/2 pl-80 pr-10 py-10 flex flex-col justify-center items-center text-gray-300">
+            <div>
+              Renaissance 7.0 will comprise 2 panel discussions, each having 3
+              industry veterans who will discuss a topic together which will
+              help to gain a better understanding of the topic than you did
+              before. After the discussion, the panel will be open to the
+              audience for their doubts and questions
+            </div>
+            <div className="text-semibold text-xl text-left w-full tracking-wide mt-[30px]">
+              The topics of discussion are:
+            </div>
+            <div className="text-left w-full tracking-wide mt-[10px] flex">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+              </span>
+              <span className="ml-[10px]">
+                Cracking the D2C Code for the emerging brands
+              </span>
+            </div>
+            <div className="text-left w-full tracking-wide mt-[5px] flex">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+              </span>
+              <span className="ml-[10px]">
+                Inside the metaverse: A new world of business opportunities
+              </span>
+            </div>
           </div>
-          <div className="w-1/2 pr-40 pl-10 py-10 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300">
+          <div className="w-1/2 pr-80 pl-10 py-10 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300">
             FORMAT
           </div>
         </div>
-        <div className="bg-custom-dark flex pb-10">
+        {/* <div className="bg-custom-dark flex pb-10">
           <div className="w-1/2 pl-40 pr-10 py-10 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300">
             RULES AND REGULATIONS
           </div>
@@ -107,7 +140,7 @@ const PanelDiscussion = () => {
             repellendus voluptate, tempora sequi corrupti atque provident minus
             inventore, aperiam fugiat nemo!
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="carousel bg-custom-secondary pb-[70px] pt-[45px]">

@@ -1,10 +1,10 @@
-import img1 from "../../assets/Events/One.jpg";
-import img2 from "../../assets/Events/Two.jpg";
-import img3 from "../../assets/Events/Three.jpg";
-import img4 from "../../assets/Events/Four.jpeg";
-import img5 from "../../assets/Events/Five.jpg";
-import img6 from "../../assets/Events/Six.jpg";
-import img7 from "../../assets/Events/Seven.jpeg";
+import img1 from "../../assets/EventComponent/One.jpg";
+import img2 from "../../assets/EventComponent/Two.jpg";
+import img3 from "../../assets/EventComponent/Three.jpg";
+import img4 from "../../assets/EventComponent/Four.jpeg";
+import img5 from "../../assets/EventComponent/Five.jpg";
+import img6 from "../../assets/EventComponent/Six.jpg";
+import img7 from "../../assets/EventComponent/Seven.jpeg";
 
 const events = [
   {
