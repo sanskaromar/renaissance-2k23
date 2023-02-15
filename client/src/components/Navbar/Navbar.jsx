@@ -76,10 +76,12 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="#"
-            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent"
+            href="/auth"
+            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold shadow-[inset_0_0_0_0_rgb(132,169,140)] hover:text-white hover:shadow-[inset_15em_0_0_0_rgb(132,169,140)] transition ease-in-out delay-50 duration-300"
           >
-            <li className="cursor-pointer">CONFIRM YOUR SEAT</li>
+            <li className="cursor-pointer" key={`link-confirmYourSeat`}>
+              CONFIRM YOUR SEAT
+            </li>
           </a>
         </ul>
       </div>
@@ -125,15 +127,11 @@ function Navbar() {
                     </a>
                   </li>
                 ))}
-
-                <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm">
-                  <a
-                    href="#"
-                    className="text-base xs:text-xl font-bold text-custom-accent"
-                  >
+                <a href="/auth" className="">
+                  <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm text-base xs:text-xl font-bold text-custom-accent">
                     CONFIRM YOUR SEAT
-                  </a>
-                </li>
+                  </li>
+                </a>
               </ul>
             </motion.div>
           </div>

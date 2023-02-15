@@ -15,7 +15,9 @@ function About() {
           <br />
           <span className="">3968 CARSON STREET, SAN DIEGO, CA 92101</span>
           <br />
-          <button className="p-3 border-2 border-white mt-6">BUY TICKET</button>
+          <button className="p-3 border-2 border-white mt-6 shadow-[inset_0_0_0_0_rgb(132,169,140)] hover:border-[#84A98C] hover:shadow-[inset_15em_0_0_0_rgb(132,169,140)] transition ease-in-out delay-50 duration-300">
+            BUY TICKET
+          </button>
         </div>
       </div>
       {/* div for the about section */}
