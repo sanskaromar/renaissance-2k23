@@ -48,11 +48,35 @@ const HamClose = (
 function Navbar() {
   const [toggle, setToggle] = useState(false);
 
+  const [navScroll, setScroll] = useState(false);
+  console.log(navScroll);
+
+  window.onscroll = function () {
+    console.log("executes");
+    console.log(window.scrollY);
+    if (window.scrollY > 500) {
+      setScroll(true);
+      console.log(navScroll);
+    } else {
+      setScroll(false);
+    }
+  };
+
   return (
     // navbar component
-    <nav className="w-full bg-custom-dark flex flex-row justify-between z-50 fixed">
+    <nav
+      className={`w-full bg-custom-dark flex flex-row justify-between z-50 fixed transition duration-600 ${
+        navScroll ? "shadow-xl" : ""
+      }`}
+    >
       {/* logo  */}
-      <div className="logo px-4 py-4 md:px-2 lg:px-4 lg:py-4 flex justify-center items-center w-1/3 h-1/3 lg:w-1/2 lg:h-1/2xs:px-8 xs:py-8 ">
+      <div
+        className={`logo px-4 py-4 md:px-8 md:py-4 flex justify-center items-center w-1/3 h-1/3 ${
+          !navScroll
+            ? "lg:w-1/2 lg:h-1/2"
+            : "md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5"
+        } xs:px-8 xs:py-8 transition duration-600`}
+      >
         <a href="#">
           <img className="cursor-pointer" src={logo} alt="Renaissance Logo" />
         </a>
