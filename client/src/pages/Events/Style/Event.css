@@ -36,6 +36,7 @@ carousel {
 #s5:checked ~ #slide3 {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   transform: translate3d(-50%, 0, -400px);
+  opacity: 30%;
 }
 
 #s1:checked ~ #slide5,
@@ -45,6 +46,7 @@ carousel {
 #s5:checked ~ #slide4 {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translate3d(25%, 0, -200px);
+  opacity: 60%;
 }
 
 #s1:checked ~ #slide1,
@@ -52,8 +54,12 @@ carousel {
 #s3:checked ~ #slide3,
 #s4:checked ~ #slide4,
 #s5:checked ~ #slide5 {
-  box-shadow: 0 30px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 30px 25px 0px rgba(0, 0, 0, 0.3),
+    0 11px 7px 0 rgba(0, 0, 0, 0.19);
   transform: translate3d(0, 0, 0);
+  border-style: solid;
+  border-width: 5px;
+  border-color: antiquewhite;
 }
 
 #s1:checked ~ #slide2,
@@ -63,6 +69,7 @@ carousel {
 #s5:checked ~ #slide1 {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translate3d(-25%, 0, -200px);
+  opacity: 60%;
 }
 
 #s1:checked ~ #slide3,
@@ -72,4 +79,5 @@ carousel {
 #s5:checked ~ #slide2 {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   transform: translate3d(50%, 0, -400px);
+  opacity: 30%;
 }

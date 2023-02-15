@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import EventFooter from "./EventFooter";
 import "./Style/Event.css";
@@ -12,7 +12,7 @@ import img4 from "../../assets/Events/Four.jpeg";
 import img5 from "../../assets/Events/Five.jpg";
 
 const EPlan = () => {
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -115,18 +115,17 @@ const EPlan = () => {
         <div className="text-center font-semibold text-4xl mb-[45px] tracking-wide">
           GALLERY
         </div>
-        {/* {open === false ? ( */}
         <section className="mb-[40px] relative z-0" id="slider">
-          {/* <div
+          <div
             className={
               open === false
-                ? "bg-black z-10 opacity-[80%] h-full w-full absolute text-white flex justify-center items-center"
-                : "display-none"
+                ? "bg-black z-10 opacity-[80%] h-full w-full absolute text-white flex justify-center items-center text-2xl"
+                : "hidden"
             }
             onClick={() => setOpen(true)}
           >
-            Hello
-          </div> */}
+            DOUBLE TAP TO OPEN
+          </div>
           <input type="radio" name="slider" id="s1" />
           <input type="radio" name="slider" id="s2" />
           <input
@@ -159,8 +158,6 @@ const EPlan = () => {
             <img className="h-full w-full" src={img5} />
           </label>
         </section>
-        {/* ) : (<div onClick={setOpen(true)}>Empty</div>
-        )} */}
         <div className="flex justify-center">
           <button className="bg-custom-accent mt-5 px-3 py-3 pl-4 w-50 text-left rounded-sm font-semibold flex justify-left items-center hover:bg-custom-secondary transition ease-in-out duration-700">
             CONFIRM YOUR SEAT
