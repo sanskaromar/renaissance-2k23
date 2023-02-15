@@ -47,19 +47,11 @@ const HamClose = (
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
-
   const [navScroll, setScroll] = useState(false);
-  console.log(navScroll);
 
   window.onscroll = function () {
-    console.log("executes");
-    console.log(window.scrollY);
-    if (window.scrollY > 500) {
-      setScroll(true);
-      console.log(navScroll);
-    } else {
-      setScroll(false);
-    }
+    if (window.scrollY > 500) setScroll(true);
+    else setScroll(false);
   };
 
   return (
