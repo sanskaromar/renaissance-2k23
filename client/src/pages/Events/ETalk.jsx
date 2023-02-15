@@ -7,13 +7,18 @@ const ETalk = () => {
     <div>
       <Navbar />
       <div className="bg-custom-dark text-center py-[50px] flex justify-center items-center">
-        <div className="h-[200px] mb-[170px] z-10 w-full text-left text-9xl font-bold text-custom-secondary pl-[642px] tracking-wide absolute">
-          E-TALK
+        <div className="h-[200px] mb-[200px] z-10 w-full text-left text-9xl font-bold text-custom-secondary pl-[643px] tracking-wide absolute">
+          <span className="text-custom-dark">E-</span>TALK
         </div>
         <div>
           <div className="mr-[110px] w-[500px] z-0 relative">
-            <div className="w-full h-full opacity-75 bg-black absolute"></div>
-            <img className="bg-white" src={img} alt="" srcset="" />
+            <div className="w-full h-full opacity-[30%] bg-black absolute"></div>
+            <img
+              className="bg-white w-full h-[510px]"
+              src={img}
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
         <div className="h-[300px] flex items-end">

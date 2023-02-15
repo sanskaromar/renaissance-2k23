@@ -7,12 +7,12 @@ const GameOfStocks = () => {
     <div>
       <Navbar />
       <div className="bg-custom-dark text-center py-[50px] flex justify-center items-center">
-        <div className="h-[130px] mb-[170px] z-10 w-full text-right text-8xl font-bold text-custom-secondary pr-[140px] tracking-wide absolute">
-          GAME OF STOCKS
+        <div className="h-[130px] mb-[285px] z-10 w-full text-right text-8xl font-bold text-custom-secondary pr-[162px] tracking-wide absolute">
+          <span className="text-custom-dark">GAM</span>E OF STOCKS
         </div>
         <div>
-          <div className="mr-[110px] w-[500px] z-0 relative">
-            <div className="w-full h-full opacity-75 bg-black absolute"></div>
+          <div className="bg-white h-[500px] flex items-end mr-[110px] w-[500px] z-0 relative">
+            <div className="w-full h-full opacity-[30%] bg-black absolute"></div>
             <img className="bg-white" src={img} alt="" srcset="" />
           </div>
         </div>

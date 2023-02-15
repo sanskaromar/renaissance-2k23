@@ -7,13 +7,13 @@ const InternshipFair = () => {
     <div>
       <Navbar />
       <div className="bg-custom-dark text-center py-[50px] flex justify-center items-center">
-        <div className="h-[260px] mb-[170px] z-10 w-full text-right text-8xl font-bold text-custom-secondary pr-[140px] tracking-wide absolute">
-          INTERNSHIP FAIR
+        <div className="h-[260px] mb-[165px] z-10 w-full text-right text-8xl font-bold text-custom-secondary pr-[158px] tracking-wide absolute">
+          <span className="text-custom-dark">INTE</span>RNSHIP FAIR
         </div>
         <div>
           <div className="mr-[110px] w-[500px] z-0 relative">
-            <div className="w-full h-full opacity-75 bg-black absolute"></div>
-            <img className="bg-white" src={img} alt="" srcset="" />
+            <div className="w-full h-full opacity-[30%] bg-black absolute"></div>
+            <img className="bg-white w-full" src={img} alt="" srcset="" />
           </div>
         </div>
         <div className="h-[300px] flex items-end">

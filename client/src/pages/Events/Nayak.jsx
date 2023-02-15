@@ -7,12 +7,12 @@ const Nayak = () => {
     <div>
       <Navbar />
       <div className="bg-custom-dark text-center py-[50px] flex justify-center items-center">
-        <div className="h-[200px] mb-[170px] z-10 w-full text-left text-9xl font-bold text-custom-secondary pl-[590px] tracking-wide absolute">
-          NAYAK
+        <div className="h-[200px] mb-[315px] z-10 w-full text-left text-9xl font-bold text-custom-secondary pl-[665px] tracking-wide absolute">
+          <span className="text-custom-dark">N</span>AYAK
         </div>
         <div>
-          <div className="mr-[110px] w-[500px] z-0 relative">
-            <div className="w-full h-full opacity-75 bg-black absolute"></div>
+          <div className="bg-white h-[590px] flex items-end mr-[110px] w-[500px] z-0 relative">
+            <div className="w-full h-full opacity-[30%] bg-black absolute"></div>
             <img className="bg-white" src={img} alt="" srcset="" />
           </div>
         </div>

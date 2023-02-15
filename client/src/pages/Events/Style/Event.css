@@ -9,7 +9,7 @@ carousel {
 }
 
 #slider {
-  height: 22vw;
+  height: 25vw;
   margin-right: 400px;
   margin-left: 400px;
   position: relative;
@@ -19,7 +19,7 @@ carousel {
 
 #slider label {
   margin: auto;
-  width: 60%;
+  width: 70%;
   height: 100%;
   border-radius: 4px;
   position: absolute;
