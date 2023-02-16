@@ -65,7 +65,7 @@ function Navbar() {
       <div
         className={`logo px-4 py-4 md:px-8 md:py-4 flex justify-center items-center w-1/3 h-1/3 ${
           !navScroll
-            ? "lg:w-1/2 lg:h-1/2"
+            ? "lg:w-1/3 lg:h-1/3"
             : "md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5"
         } xs:px-8 xs:py-8 transition duration-600`}
       >
@@ -75,14 +75,14 @@ function Navbar() {
       </div>
 
       {/* Navigation Menu  */}
-      <div className="container hidden md:flex justify-end px-3 lg:px-12">
+      <div className="container hidden md:flex justify-end px-3 xl:px-12">
         <ul className="text-custom-nav text-xs flex flex-row justify-center items-center">
           {navItems.map((item) => (
             <a
               href="#"
-              className="mx-2 px-1 lg:mx-4 lg:px-2 relative before:content-[''] before:absolute before:bg-custom-accent before:h-[3px] before:w-0 before:left-0 before:bottom-[-8px] before:transition-[0.3s] before:duration-300 hover:before:w-full hover:text-custom-secondary"
+              className="mx-2 px-1 lg:mx-4 lg:px-2 relative  before:content-[''] before:absolute before:bg-custom-accent before:h-[3px] before:w-0 before:left-0 before:bottom-[-8px] before:transition-[0.3s] before:duration-300 hover:before:w-full hover:text-custom-secondary"
             >
-              <li className="font-light cursor-pointer" key={`link-${item}`}>
+              <li className="cursor-pointer" key={`link-${item}`}>
                 {item.toUpperCase()}
                 {/* <div />
             <Link to={`${item}`} smooth={true} duration={500}>
