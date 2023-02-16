@@ -60,7 +60,7 @@ const Events = () => {
   };
 
   return (
-    <div className="bg-custom-dark h-screen lg:flex lg:justify-center lg:items-center">
+    <div className="bg-custom-dark h-full lg:flex lg:justify-center lg:items-center">
       <div className="bg-custom-dark sm:pb-6 lg:pt-6">
         <div
           className="lg:flex lg:flex-row sm:flex sm:flex-col justify-center items-center xl:mx-44 lg:mx-20 sm:mx-10"
