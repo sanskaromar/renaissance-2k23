@@ -32,7 +32,7 @@ function About() {
             WEEK
             <br />
             <button className="text-left text-[12px] text-white bg-[#354F52] p-2 hover:bg-[#2F3E46] md:w-[10rem]">
-              CONFIRM YOUR SEAT -{">"}
+              CONFIRM YOUR SEAT &rarr;
             </button>
           </div>
         </div>

@@ -83,17 +83,17 @@ const Footer = () => {
                       </p>
 
                       <div className="icons justify-around flex h-40 items-center text-3xl  w-full">
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
-                          <BsFacebook className=" text-[#2F3E46] rounded-full shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300  hover:text-[#0269DA]">
+                          <BsFacebook className="rounded-full shadow-2xl" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
-                          <BsTwitter className=" text-[#2F3E46] shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300 hover:text-[#1C93E4]">
+                          <BsTwitter className="shadow-2xl" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
-                          <BsLinkedin className=" text-[#2F3E46] shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300  hover:text-[#0B5FBB]">
+                          <BsLinkedin className="shadow-2xl" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl">
-                          <BsYoutube className=" text-[#2F3E46]" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300  hover:text-[#F20000]">
+                          <BsYoutube className="shadow-2xl" />
                         </div>
                       </div>
                     </div>
