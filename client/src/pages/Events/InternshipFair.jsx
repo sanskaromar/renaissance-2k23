@@ -73,17 +73,23 @@ const InternshipFair = () => {
         >
           <div
             id="FormatHead"
-            className="w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+            className="lg:hidden w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
           >
             FORMAT
           </div>
-          <div className="w-1/2 lg:pr-40 xl:pr-70 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
+          <div className="w-1/2 lg:pl-40 xl:pl-70 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
             For Internfair, startups need to fill the google form, then register
             on our portal using the invitation sent by us and fill their
             internship requirements. Students have to apply for the internships
             and upload their resume. Startups will shortlist the students based
             on resume and shortlisted students have to appear in the interview
             round
+          </div>
+          <div
+            id="FormatHeadDown"
+            className="w-1/2 lg:pr-40 xl:pr-60 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+          >
+            FORMAT
           </div>
         </div>
       </div>

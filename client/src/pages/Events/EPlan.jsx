@@ -71,11 +71,11 @@ const EPlan = () => {
         >
           <div
             id="FormatHead"
-            className="w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+            className="lg:hidden w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
           >
             FORMAT
           </div>
-          <div className="w-1/2 lg:pr-40 xl:pr-70 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
+          <div className="w-1/2 lg:pl-40 xl:pl-70 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
             E-Plan will consist of 5 rounds. Round 1 is an elimination round in
             which the teams need to submit the abstract. Selected teams from the
             first round will be given feedback and mentoring in round 2. In
@@ -83,6 +83,12 @@ const EPlan = () => {
             ideas. Selected teams will submit their final ppts in round 4. In
             the 5th and final round, teams need to pitch their ideas and give a
             final presentation in front of judges
+          </div>
+          <div
+            id="FormatHeadDown"
+            className="w-1/2 lg:pr-40 xl:pr-60 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+          >
+            FORMAT
           </div>
         </div>
       </div>

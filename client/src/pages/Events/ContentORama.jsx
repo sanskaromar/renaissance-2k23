@@ -73,11 +73,11 @@ const ContentORama = () => {
         >
           <div
             id="FormatHead"
-            className="w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+            className="lg:hidden w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
           >
             FORMAT
           </div>
-          <div className="w-1/2 lg:pr-40 xl:pr-70 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
+          <div className="w-1/2 lg:pl-40 xl:pl-70 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
             <div>
               <p className="">
                 There will be two stages of Evaluation. First is Mid Term
@@ -175,6 +175,12 @@ const ContentORama = () => {
               </span>
               <span className="ml-[10px]">Into the world of money-making</span>
             </div>
+          </div>
+          <div
+            id="FormatHeadDown"
+            className="w-1/2 lg:pr-40 xl:pr-60 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+          >
+            FORMAT
           </div>
         </div>
         <div

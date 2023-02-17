@@ -72,11 +72,11 @@ const MockIPLAuction = () => {
         >
           <div
             id="FormatHead"
-            className="w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+            className="lg:hidden w-1/2 lg:pl-40 xl:pl-60 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
           >
             FORMAT
           </div>
-          <div className="w-1/2 lg:pr-40 xl:pr-70 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
+          <div className="w-1/2 lg:pl-40 xl:pl-70 lg:pr-10 xl:pr-10 lg:py-10 sm:pb-10 flex flex-col justify-center items-center text-gray-300">
             <div>
               Mock IPL auction will consist of 2 rounds. Round 1 is a general
               quiz round in which teams of 4 can participate out of which top 8
@@ -134,6 +134,12 @@ const MockIPLAuction = () => {
               The decision of the organizers and the judges will be final and
               binding
             </p>
+          </div>
+          <div
+            id="FormatHeadDown"
+            className="w-1/2 lg:pr-40 xl:pr-60 lg:pl-10 xl:pl-10 lg:py-10 sm:pb-8 flex justify-center items-center text-4xl font-semibold tracking-wide text-gray-300"
+          >
+            FORMAT
           </div>
         </div>
       </div>
