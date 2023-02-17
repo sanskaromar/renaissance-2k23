@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  AiFillFacebook,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { BsTwitter } from "react-icons/bs";
 import "./CardTest.css";
 const Details = (prop) => {
   return (
@@ -26,16 +22,16 @@ const Details = (prop) => {
           <div className="color"></div>
           <div className="links">
             <a href={prop.facebook} target="__blank">
-              <AiFillFacebook className="space" />
+              <AiFillFacebook className="space hover:text-blue-600" />
             </a>
             <a href={prop.twitter} target="__blank">
-              <AiFillTwitterCircle className="space" />
+              <BsTwitter className="space hover:text-blue-500" />
             </a>
             <a href={prop.linkedin} target="__blank">
-              <AiFillLinkedin className="space" />
+              <AiFillLinkedin className="space hover:text-blue-800" />
             </a>
             <a href={prop.youtube} target="__blank">
-              <AiFillYoutube className="space" />
+              <AiFillYoutube className="space hover:text-red-900" />
             </a>
           </div>
         </div>
