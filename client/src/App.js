@@ -60,9 +60,13 @@ function App() {
                 <Navbar />
                 <About />
                 <Events />
+<<<<<<< HEAD
                 <Speakers />
                 <Gallery />
                 <Sponsors ImageList={List} />;
+=======
+                <Sponsors ImageList={List} />
+>>>>>>> 3a8a71cdbd2d48e242d6e2cd1c18610a8920e81e
                 <Testimonials />
                 <Footer />
                 <ButtonBacktoTop />

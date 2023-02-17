@@ -6,6 +6,7 @@ import {
   BsLinkedin,
   BsYoutube,
 } from "react-icons/bs";
+import { RiArrowDropUpLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <>
@@ -82,17 +83,17 @@ const Footer = () => {
                       </p>
 
                       <div className="icons justify-around flex h-40 items-center text-3xl  w-full">
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300  hover:text-[#0269DA]">
-                          <BsFacebook className="rounded-full shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl mr-2">
+                          <BsFacebook className=" text-[#2F3E46] rounded-full shadow-2xl hover:p-[2px] cursor-pointer hover:text-blue-600" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300 hover:text-[#1C93E4]">
-                          <BsTwitter className="shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl mr-2">
+                          <BsTwitter className=" text-[#2F3E46] shadow-2xl hover:p-[2px] cursor-pointer hover:text-blue-400" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300  hover:text-[#0B5FBB]">
-                          <BsLinkedin className="shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl mr-2">
+                          <BsLinkedin className=" text-[#2F3E46] shadow-2xl hover:p-[2px] cursor-pointer hover:text-blue-800" />
                         </div>
-                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl cursor-pointer text-[#2F3E46] mt-2 hover:bg-[#ffffff] hover:mt-0 transition duration-300  hover:text-[#F20000]">
-                          <BsYoutube className="shadow-2xl" />
+                        <div className="bg-[#CAD2C5]  w-12 h-12 rounded-full flex items-center justify-center  shadow-2xl mr-2">
+                          <BsYoutube className=" text-[#2F3E46] hover:p-[2px] hover:text-red-900 cursor-pointer" />
                         </div>
                       </div>
                     </div>
@@ -100,6 +101,12 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className=" flex w-full  lg:items-end justify-end pr-8 pb-5 ">
+            <button className="bg-[#CAD2C5] h-[47px] w-[47px] flex items-center justify-center shadow-2xl">
+              <RiArrowDropUpLine className="text-[30px]" />
+            </button>
           </div>
         </div>
       </div>
