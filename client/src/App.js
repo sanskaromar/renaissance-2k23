@@ -58,7 +58,7 @@ function App() {
                 <Navbar />
                 <About />
                 <Events />
-                <Sponsors ImageList={List} />;
+                <Sponsors ImageList={List} />
                 <Testimonials />
                 <Footer />
                 <ButtonBacktoTop />
