@@ -10,7 +10,7 @@ const ContentORama = () => {
       <Navbar />
       <div
         id="Heading"
-        className="bg-custom-dark text-center py-[50px] sm:flex sm:flex-col lg:flex lg:flex-row justify-center items-center"
+        className="bg-custom-dark pt-[150px] text-center py-[50px] sm:flex sm:flex-col lg:flex lg:flex-row justify-center items-center"
       >
         <div className="xlsm:h-[430px] xs:h-[360px] lg:h-[250px] mb-[285px] z-10 w-full text-center xlsm:text-5xl xs:text-4xl sm:text-5xl lg:text-8xl font-bold text-custom-secondary tracking-wide absolute">
           CONTENT-O-RAMA

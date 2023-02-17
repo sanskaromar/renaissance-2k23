@@ -47,26 +47,42 @@ const HamClose = (
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
+  const [navScroll, setScroll] = useState(false);
+
+  window.onscroll = function () {
+    if (window.scrollY > 500) setScroll(true);
+    else setScroll(false);
+  };
 
   return (
     // navbar component
-    <nav className="w-full bg-custom-dark flex flex-row justify-between z-50 sticky top-0">
+    <nav
+      className={`w-full bg-custom-dark flex flex-row justify-between z-[1000] fixed transition duration-600 ${
+        navScroll ? "shadow-xl" : ""
+      }`}
+    >
       {/* logo  */}
-      <div className="logo px-4 py-4 md:px-2 lg:px-4 lg:py-4 flex justify-center items-center w-1/3 h-1/3 lg:w-1/2 lg:h-1/2xs:px-8 xs:py-8 ">
+      <div
+        className={`logo px-4 py-4 md:px-8 md:py-4 flex justify-center items-center w-1/3 h-1/3 ${
+          !navScroll
+            ? "lg:w-1/3 lg:h-1/3"
+            : "md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5"
+        } xs:px-8 xs:py-8 transition duration-600`}
+      >
         <a href="#">
           <img className="cursor-pointer" src={logo} alt="Renaissance Logo" />
         </a>
       </div>
 
       {/* Navigation Menu  */}
-      <div className="container hidden md:flex justify-end px-3 lg:px-12">
+      <div className="container hidden md:flex justify-end px-3 xl:px-12">
         <ul className="text-custom-nav text-xs flex flex-row justify-center items-center">
           {navItems.map((item) => (
             <a
               href="#"
-              className="mx-2 px-1 lg:mx-4 lg:px-2 relative before:content-[''] before:absolute before:bg-custom-accent before:h-[3px] before:w-0 before:left-0 before:bottom-[-8px] before:transition-[0.3s] before:duration-300 hover:before:w-full hover:text-custom-secondary"
+              className="mx-2 px-1 lg:mx-4 lg:px-2 relative  before:content-[''] before:absolute before:bg-custom-accent before:h-[3px] before:w-0 before:left-0 before:bottom-[-8px] before:transition-[0.3s] before:duration-300 hover:before:w-full hover:text-custom-secondary"
             >
-              <li className="font-light cursor-pointer" key={`link-${item}`}>
+              <li className="cursor-pointer" key={`link-${item}`}>
                 {item.toUpperCase()}
                 {/* <div />
             <Link to={`${item}`} smooth={true} duration={500}>
@@ -77,9 +93,11 @@ function Navbar() {
           ))}
           <a
             href="/auth"
-            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold hover:bg-custom-accent"
+            className="mx-4 px-6 py-4 bg-custom-secondary text-custom-dark font-bold shadow-[inset_0_0_0_0_rgb(132,169,140)] hover:text-white hover:shadow-[inset_15em_0_0_0_rgb(132,169,140)] transition ease-in-out delay-50 duration-300"
           >
-            <li className="cursor-pointer">CONFIRM YOUR SEAT</li>
+            <li className="cursor-pointer" key={`link-confirmYourSeat`}>
+              CONFIRM YOUR SEAT
+            </li>
           </a>
         </ul>
       </div>
@@ -125,15 +143,11 @@ function Navbar() {
                     </a>
                   </li>
                 ))}
-
-                <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm">
-                  <Link
-                    to="/auth"
-                    className="text-base xs:text-xl font-bold text-custom-accent"
-                  >
+                <a href="/auth" className="">
+                  <li className="my-4 p-4 cursor-pointer bg-custom-secondary shadow-sm text-base xs:text-xl font-bold text-custom-accent">
                     CONFIRM YOUR SEAT
-                  </Link>
-                </li>
+                  </li>
+                </a>
               </ul>
             </motion.div>
           </div>

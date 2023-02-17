@@ -10,7 +10,7 @@ const Nayak = () => {
       <Navbar />
       <div
         id="Heading"
-        className="bg-custom-dark text-center py-[50px] sm:flex sm:flex-col lg:flex lg:flex-row justify-center items-center"
+        className="bg-custom-dark pt-[150px] text-center py-[50px] sm:flex sm:flex-col lg:flex lg:flex-row justify-center items-center"
       >
         <div className="xlsm:h-[340px] xs:h-[330px] lg:h-[220px] mb-[285px] z-10 w-full text-center xlsm:text-7xl xs:text-7xl sm:text-8xl lg:text-9xl font-bold text-custom-secondary tracking-wide absolute">
           NAYAK
