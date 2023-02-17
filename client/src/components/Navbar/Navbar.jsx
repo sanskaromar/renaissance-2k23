@@ -57,7 +57,7 @@ function Navbar() {
   return (
     // navbar component
     <nav
-      className={`w-full bg-custom-dark flex flex-row justify-between z-50 fixed transition duration-600 ${
+      className={`w-full bg-custom-dark flex flex-row justify-between z-[1000] fixed transition duration-600 ${
         navScroll ? "shadow-xl" : ""
       }`}
     >
