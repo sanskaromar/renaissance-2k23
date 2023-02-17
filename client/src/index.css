@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+
   /* default theme */
   :root {
     /* --var-name: rgb value */
@@ -76,4 +77,8 @@ body::-webkit-scrollbar {
 html,
 body {
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
