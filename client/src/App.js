@@ -2,6 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
+// Scroll to top of page
+import ScrollToTop from "./pages/Events/ScrollToTop/ScrollToTop";
+
+// Scroll to top button
+import ButtonBacktoTop from "./components/ButtonBacktoTop/ButtonBacktoTop";
+
 // Components
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -22,8 +28,6 @@ import MockIPLAuction from "./pages/Events/MockIPLAuction";
 import GameOfStocks from "./pages/Events/GameOfStocks";
 import InternshipFair from "./pages/Events/InternshipFair";
 import PanelDiscussion from "./pages/Events/PanelDiscussion";
-
-import ButtonBacktoTop from "./components/ButtonBacktoTop/ButtonBacktoTop";
 
 function App() {
   const List = [
@@ -64,6 +68,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"
