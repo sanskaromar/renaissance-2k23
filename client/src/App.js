@@ -9,6 +9,8 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Register from "./components/AuthPage/AuthPage";
 import Layout from "./components/AuthPage/Login";
+import Speakers from "./components/Speakers/Speakers";
+import Gallery from "./components/Gallery/Gallery";
 import ButtonBacktoTop from "./components/ButtonBacktoTop/ButtonBacktoTop";
 
 function App() {
@@ -58,6 +60,8 @@ function App() {
                 <Navbar />
                 <About />
                 <Events />
+                <Speakers />
+                <Gallery />
                 <Sponsors ImageList={List} />;
                 <Testimonials />
                 <Footer />

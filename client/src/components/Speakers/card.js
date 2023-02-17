@@ -1,11 +1,10 @@
 import React from "react";
-import { icons } from "react-icons";
-import {
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillFacebook,
-  AiFillTwitterCircle
-} from "react-icons/ai";
+// import {
+//   AiFillInstagram,
+//   AiFillLinkedin,
+//   AiFillFacebook,
+//   AiFillTwitterCircle
+// } from "react-icons/ai";
 const Card = () => {
   return (
     <>
@@ -23,7 +22,7 @@ const Card = () => {
               Mark A. Parker
             </h1>
 
-            <p className="text-neutral-700 flex justify-center p-2 text-gray-200">
+            <p className="text-neutral-700 flex justify-center p-2 text-gray-700">
               Web Developer
             </p>
           </div>
