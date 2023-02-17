@@ -6,7 +6,6 @@ import {
   BsLinkedin,
   BsYoutube,
 } from "react-icons/bs";
-import { RiArrowDropUpLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <>
@@ -101,12 +100,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className=" flex w-full  lg:items-end justify-end pr-8 pb-5 ">
-            <button className="bg-[#CAD2C5] h-[47px] w-[47px] flex items-center justify-center shadow-2xl">
-              <RiArrowDropUpLine className="text-[30px]" />
-            </button>
           </div>
         </div>
       </div>

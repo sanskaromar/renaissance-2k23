@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Register from "./components/AuthPage/AuthPage";
 import Layout from "./components/AuthPage/Login";
+import ButtonBacktoTop from "./components/ButtonBacktoTop/ButtonBacktoTop";
 
 function App() {
   const List = [
@@ -60,6 +61,7 @@ function App() {
                 <Sponsors ImageList={List} />;
                 <Testimonials />
                 <Footer />
+                <ButtonBacktoTop />
               </>
             }
           ></Route>
