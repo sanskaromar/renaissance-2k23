@@ -92,7 +92,7 @@ const Events = () => {
             >
               {eventsData[currState].body}
             </p>
-            <button className="bg-gray-300 mt-10 p-2 pl-3 w-40 text-left rounded-sm font-semibold flex justify-left items-center">
+            <button className="bg-gray-300 mt-10 p-2 pl-3 w-40 text-left rounded-sm font-semibold flex justify-left items-center hover:bg-custom-secondary transition">
               READ MORE
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+
   /* default theme */
   :root {
     /* --var-name: rgb value */
