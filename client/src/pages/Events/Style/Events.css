@@ -1,0 +1,48 @@
+@media screen and (max-width: 640px) {
+  #Heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #Participate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  #Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+  }
+  #DesHead {
+    padding-bottom: 30px;
+  }
+  #Format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+  }
+  #FormatHead {
+    padding-bottom: 30px;
+  }
+  #Rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  #RulesHead {
+    padding-bottom: 30px;
+    padding-top: 70px;
+  }
+}
