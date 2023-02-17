@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+
   /* default theme */
   :root {
     /* --var-name: rgb value */
@@ -68,6 +69,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
