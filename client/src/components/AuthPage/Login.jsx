@@ -20,14 +20,14 @@ const Layout = () => {
   };
   return (
     <>
-      <div className="bg-back w-full h-full">
+      <div className="overflow-y-hidden bg-back w-full h-full">
         <div className="">
           <Navbar />
         </div>
 
-        <div className="relative bg-back  w-screen h-screen flex justify-center items-center  pt-[110px] p-[30px] sm:p-[50px] sm:pt-[270px] ">
+        <div className="overflow-y-hidden relative bg-back  w-screen h-screen flex justify-center items-center  pt-[110px] p-[30px] sm:p-[50px] sm:pt-[160px] ">
           <Background />
-          <div className="p-[17px] sm:p-[30px] opacity-[0.85] z-20 w-full h-[500px] sm:w-[500px] sm:h-[550px] bg-lgreen flex flex-col rounded">
+          <div className="p-[17px] sm:p-[30px] opacity-[0.85] z-20 w-full h-[500px] sm:w-[500px] sm:h-[520px] bg-lgreen flex flex-col rounded">
             <div className="mb-[25px] logo flex flex-col justify-center items-center w-full">
               <img className="w-[50px] h-[50px]" src={img}></img>
               <h1 className="tracking-[1.2px] text-white font-medium mt-[10px] text-sm sm:text-lg">
