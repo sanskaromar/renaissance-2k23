@@ -19,6 +19,11 @@ import Footer from "./components/Footer/Footer";
 // Pages
 import Register from "./components/AuthPage/AuthPage";
 import Layout from "./components/AuthPage/Login";
+<<<<<<< HEAD
+import Speakers from "./components/Speakers/Speakers";
+import Gallery from "./components/Gallery/Gallery";
+import ButtonBacktoTop from "./components/ButtonBacktoTop/ButtonBacktoTop";
+=======
 
 import Nayak from "./pages/Events/Nayak";
 import EPlan from "./pages/Events/EPlan";
@@ -28,6 +33,7 @@ import MockIPLAuction from "./pages/Events/MockIPLAuction";
 import GameOfStocks from "./pages/Events/GameOfStocks";
 import InternshipFair from "./pages/Events/InternshipFair";
 import PanelDiscussion from "./pages/Events/PanelDiscussion";
+>>>>>>> 7b32eb8f67887573e2a8ea6f69185ca84e1a941f
 
 function App() {
   const List = [
@@ -77,7 +83,9 @@ function App() {
                 <Navbar />
                 <About />
                 <Events />
-                <Sponsors ImageList={List} />
+                <Speakers />
+                <Gallery />
+                <Sponsors ImageList={List} />;
                 <Testimonials />
                 <Footer />
                 <ButtonBacktoTop />
