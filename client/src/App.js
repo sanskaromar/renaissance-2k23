@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-// Scroll to top of page
-import ScrollToTop from "./pages/Events/ScrollToTop/ScrollToTop";
-
 // Scroll to top button
 import ButtonBacktoTop from "./components/ButtonBacktoTop/ButtonBacktoTop";
+
+// Scroll to top of event page on initial render
+import ScrollToTop from "./pages/Events/ScrollToTop/ScrollToTop";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -86,29 +86,78 @@ function App() {
           ></Route>
           <Route path="/auth" element={<Register />}></Route>
           <Route path="/auth/login" element={<Layout />}></Route>
-          <Route path="/events/e-plan" element={<EPlan />}></Route>
-          <Route path="/events/e-talk" element={<ETalk />}></Route>
+          <Route
+            path="/events/e-plan"
+            element={
+              <>
+                <EPlan />
+                <ButtonBacktoTop />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/events/e-talk"
+            element={
+              <>
+                <ETalk />
+                <ButtonBacktoTop />
+              </>
+            }
+          ></Route>
           <Route
             path="/events/mock-ipl-auction"
-            element={<MockIPLAuction />}
+            element={
+              <>
+                <MockIPLAuction />
+                <ButtonBacktoTop />
+              </>
+            }
           ></Route>
           <Route
             path="/events/game-of-stocks"
-            element={<GameOfStocks />}
+            element={
+              <>
+                <GameOfStocks />
+                <ButtonBacktoTop />
+              </>
+            }
           ></Route>
           <Route
             path="/events/internship-fair"
-            element={<InternshipFair />}
+            element={
+              <>
+                <InternshipFair />
+                <ButtonBacktoTop />
+              </>
+            }
           ></Route>
           <Route
             path="/events/panel-discussion"
-            element={<PanelDiscussion />}
+            element={
+              <>
+                <PanelDiscussion />
+                <ButtonBacktoTop />
+              </>
+            }
           ></Route>
           <Route
             path="/events/content-o-rama"
-            element={<ContentORama />}
+            element={
+              <>
+                <ContentORama />
+                <ButtonBacktoTop />
+              </>
+            }
           ></Route>
-          <Route path="/events/nayak" element={<Nayak />}></Route>
+          <Route
+            path="/events/nayak"
+            element={
+              <>
+                <Nayak />
+                <ButtonBacktoTop />
+              </>
+            }
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>
